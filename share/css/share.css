@@ -85,7 +85,7 @@ ul#gNavi li.firstItem{
     z-index: 9999;
 }
 
-#footer p{
+#footer .footerInner{
     width:960px;
     margin:0 auto;
 }
