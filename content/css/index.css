@@ -313,3 +313,19 @@ div.txtTemp7 div.fR{ width: 350px;}
 div.txtTemp7 strong{ margin-bottom: 6px;}
 div.txtTemp7 span{ color: #666;}
 div.txtTemp7 p{ float: left; width: 320px;}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapBg {
+    flex: 1;
+}
