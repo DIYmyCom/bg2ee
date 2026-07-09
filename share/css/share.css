@@ -73,20 +73,16 @@ ul#gNavi li.firstItem{
 }
 
 #footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
-    background: #000;
-    color: #fff;
-    text-align: center;
-
-    z-index: 9999;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background:#000;
+    z-index:9999;
 }
 
-#footer p#copyright{
-	text-align: center;
-	padding: 8px;
-	font-family:"lucida grande", tahoma, verdana, arial, sans-serif!important;
+#footer p{
+    width:960px;
+    margin:0 auto;
 }
+
