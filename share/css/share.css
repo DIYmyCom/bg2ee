@@ -76,7 +76,7 @@ ul#gNavi li.firstItem{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 960px;
 
     background: #000;
     color: #fff;
