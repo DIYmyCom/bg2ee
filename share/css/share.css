@@ -76,17 +76,16 @@ ul#gNavi li.firstItem{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 960px;
-
-    background: #000;
-    color: #fff;
-    text-align: center;
+    width: 100%;
 
     z-index: 9999;
 }
 
 #footer .footerInner{
     width:960px;
+    background: #000;
+    color: #fff;
+    text-align: center;
     margin:0 auto;
 }
 
