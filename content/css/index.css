@@ -315,17 +315,6 @@ div.txtTemp7 span{ color: #666;}
 div.txtTemp7 p{ float: left; width: 320px;}
 
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-#wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-#wrapBg {
-    flex: 1;
+body{
+    padding-bottom:40px;
 }
