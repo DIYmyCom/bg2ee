@@ -35,7 +35,7 @@
                 <a id="top"></a>
 
                 <div id="toc">
-				<p><img src="img/main.jpg" width="1024" alt="" /></p>
+				<div style="display:flex; justify-content:center;"><p><img src="img/main.jpg" width=100% alt="" /></p></div>
                     <h2>目次</h2>
 
                     <ul>
@@ -43,23 +43,96 @@
                         <li><a href="#portrait">ポートレート</a></li>
                         <li><a href="#magic">魔法</a></li>
                     </ul>
-					<div style="position: relative;">
-					<p></p>
-					<img 
-						src="img/Snow_CheerfulDance_80ms_800pt.gif"
-						width="800"
-						style="
-						position: absolute;
-						left: 450px;
-						bottom: 00;
-						">
-					</div>
+
                     <h2>最初に</h2>
+						<p>BG2EEをソーサラーでプレイしてみようと思う。<br />
+						日本語でプレイしようとすると、パッチが必要など、ゲーム以外のノウハウも必要なので備忘録としてまとめる。<br />
+						以前プレイしたゲームの自キャラのSnow（→）と共に楽しく記録していきたい。
+						</p>
+							<div style="position: relative;">
+							<p></p>
+							<img 
+								src="img/Snow_CheerfulDance_80ms_800pt.gif"
+								width="800"
+								style="
+								position: absolute;
+								left: 450px;
+								bottom: 00;
+								">
+							</div>
+                    <h3>日本語化</h3>
 						<p>BGEE2は英語版のみなので、下記の３ステップで環境を整えた。<br />
-						Step1 BG2EEを2.5にする。（日本語化パッチが2.5にしか対応していないため）<br />
+						Step1 BG2EEを2.5に変更（日本語化パッチが2.5にしか対応していないため）<br />
 						Step2 日本語化<br />
 						Step3 UIの改善<br />
 						</p>
+                    <h4>Step1 BG2EEを2.5に変更</h4>
+							<div style="position: relative;">
+							<p></p>
+							<img 
+								src="img/BG2EEVersion.png"
+								width="500"
+								style="
+								position: absolute;
+								right: 50px;
+								top: 00;
+								">
+							</div>
+                        <p>
+                        ①　Steamのライブラリの『Baldur's Gate II EE』を右クリック<br />
+                        ②　プロパティ<br />
+                        ③　ゲームバージョンとベータ<br />
+                        ④　bgiiee_2.5を選択<br />
+                        ⑤　ダウンロードが終わるまで待った<br />
+                        ゲームのタイトル画面の上部に表示されたバージョンが2.5になった。
+                        </p>
+                    <h4>Step2 日本語化</h4>
+                        <p>
+                        ①　日本語化パッチを入手<br />
+                        　<a href="https://wikiwiki.jp/gorion/Japanese?utm_source=chatgpt.com">BGEE Spoiler Wikiの日本語化ページ</a>のリンクをたどって『BG2EE日本語化パッチ_2.5.zip』をダウンロードした。<br />
+                        ②　パッチの適用<br />
+                        　パッチを解凍するとlang,override,Portraitsの３つのフォルダができた。<br />
+                        　lang,overrideフォルダをゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate II Enhanced Edition）にコピーした。<br />
+                        ③　日本語を選択<br />
+                        　ゲームを起動して、languageからJapaneseを選択した。<br />
+                        </p>
+                    <h4>Step3 UIの改善</h4>
+                        <p>
+                        ①　LeUIを入手<br />
+                        　<a href="https://github.com/r-e-d/LeUI?utm_source=chatgpt.com">LeUIの公式GitHub</a>のリンクをたどって『lefreuts-enhanced-ui-bg2ee-skin-4.3.2.zip』をダウンロードした。<br />
+                        ②　LeUIの適用<br />
+                        　ゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate II Enhanced Edition）に<br />
+                        　LeUIを解凍した。<br />
+                        　setup-LeUI.exeを実行した。<br />
+                        </p>
+                    <a id="portrait" name="portrait"></a>	
+                    <h3>ポートレートの変更</h3>
+                        <p>
+                        BGはポートレートはいまいちなので、ポートレートパックから選択して、<A href="img/portraits.zip" download>これ</A>を使った。<br />
+                        解凍して、ゲームデータフォルダ（C:\\Users\\\<ユーザー名\>\\Documents\\Baldur's Gate II - Enhanced Edition）にコピーした。<br />
+                        ちなみに、ゲームデータをバックアップするときは、このゲームデータフォルダを丸ごと保存するとよい。
+                        </p>
+                    <a id="makeChar" name="makeChar"></a>	
+                    <h3>主人公</h3>
+                        <p>
+                        〇魔法<br />
+                        Level1 クロマティックオーブ/マジックミサイル/シールド/スプーク/アイデンティファイ<br />
+                        Level2 ミラーイメージ/ノック/ウェブ<br />
+                        Level3 スカルトラップ/ヘイスト<br />
+                        </p>
+                        <img src="img/Claude.png" width="800">
+                        </span>
+                        <div style="position: relative;">
+                        <p></p>
+                        <img 
+                            src="img/Snow_Jump_100ms_1500pt_wait3s.gif"
+                            width="1500"
+                            style="
+                            position: absolute;
+                            left: 100px;
+                            bottom: 00;
+                            ">
+                        </div>
                 </div>
 
                 <!-- 本文 -->

@@ -8,11 +8,7 @@ html{
 
 body{
     margin:0;
-    font-family:
-        "Yu Gothic",
-        "Hiragino Sans",
-        sans-serif;
-
+ 	font-family:"lucida grande", tahoma, verdana, arial, sans-serif!important;
     font-size:16px;
     line-height:1.8;
 
@@ -63,6 +59,7 @@ body{
 
 
 #toc h2{
+   font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif!important;
 
     margin-top:0;
 
@@ -168,4 +165,43 @@ body{
 .footerInner a:hover{
 
     color:#ffd15a;
+}
+/*=========================
+  見出し
+=========================*/
+
+h2,
+h3,
+h4,
+h5{
+    margin:40px 0 20px;
+    padding:8px 14px;
+    font-weight:bold;
+    line-height:1.4;
+    color:#000;
+}
+
+/* 大見出し */
+h2{
+    background:#000;
+    color:#fff;
+    font-size:1.6rem;
+}
+
+/* 中見出し */
+h3{
+    background:#d0d0d0;
+    font-size:1.5rem;
+}
+
+/* 小見出し */
+h4{
+    background:#f0f0f0;
+    font-size:1.4rem;
+}
+
+/* 最小見出し */
+h5{
+    background:#f8f8f8;
+    font-size:1.2rem;
 }
