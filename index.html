@@ -1,145 +1,77 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="ja">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+
 <title>BG2EE 体験記</title>
-<meta name="keywords" content="バルダーズゲート,Bulders Gate,BGEE,BG2EE,D&D,レトロゲーム" />
-<meta name="description" content="バルダーズゲート,Bulders Gate,BGEE,BG2EE,D&D,レトロゲーム" />
-<meta http-equiv="Content-Language" content="ja" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="imagetoolbar" content="no" />
-<link href="share/css/set/import.css" rel="stylesheet" type="text/css" media="all" />
-<link href="share/css/share.css" rel="stylesheet" type="text/css" media="all" />
-<link href="content/css/index.css" rel="stylesheet" type="text/css" media="all" />
-<script type='text/javascript' src='share/js/jquery.js'></script>
-<script type='text/javascript' src='share/js/scroll.js'></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description"
+      content="BG2EE（Baldur's Gate II Enhanced Edition）の攻略・日本語化・UI改善・プレイ日記">
+
+<meta name="keywords"
+      content="BG2EE,Baldur's Gate II Enhanced Edition,BGEE,攻略,日本語化,D&D,レトロゲーム">
+
+<link rel="stylesheet" href="css/index.css">
+<script src="incl.js" defer></script>
+
 </head>
+
 
 <body>
 
-	<div id="wrapper">
+<div id="wrapper">
 
-	<include id='menu.html'></include>
+    <include id="menu.html"></include>
 
-		<div id="wrapBg">
-			<div class="wrapBox clearfix">
-		<div id="mainImgBox"><p id="mainImg"><img src="index/img/main.jpg" width="1024" alt="" /></p></div>
-				<div id="mainContents">
+    <div id="wrapBg">
 
-<!-- ここからサンプルレイアウト -->
-<a id="install" name="install"></a>	
-<p class="chapter8">最初に</p>
-<div class="txtTempSet txtTemp1">
-	<span>BG2EEをソーサラーでプレイしてみようと思う。<br />
-	日本語でプレイしようとすると、パッチが必要など、ゲーム以外のノウハウも必要なので備忘録としてまとめる。<br />
-	以前プレイしたゲームの自キャラのSnow（→）と共に楽しく記録していきたい。
-	</span>
-</div>
+        <div class="container">
+
+            <div id="mainContents">
+
+                <a id="top"></a>
+
+                <div id="toc">
+				<p><img src="img/main.jpg" width="1024" alt="" /></p>
+                    <h2>目次</h2>
+
+                    <ul>
+                        <li><a href="#install">最初に</a></li>
+                        <li><a href="#portrait">ポートレート</a></li>
+                        <li><a href="#magic">魔法</a></li>
+                    </ul>
 					<div style="position: relative;">
-					<p class="chapter6">日本語化</p>
+					<p></p>
 					<img 
-						src="index/img/Snow_CheerfulDance_80ms_800pt.gif"
+						src="img/Snow_CheerfulDance_80ms_800pt.gif"
 						width="800"
 						style="
 						position: absolute;
-						left: 350px;
+						left: 450px;
 						bottom: 00;
 						">
 					</div>
-<div class="txtTempSet txtTemp1">
-	<span>BGEE2は英語版のみなので、下記の３ステップで環境を整えた。<br />
-	Step1 BG2EEを2.5にする。（日本語化パッチが2.5にしか対応していないため）<br />
-	Step2 日本語化<br />
-	Step3 UIの改善<br />
-	</span>
-</div>
-<p class="chapter5">Step1 BG2EEを2.5に変更</p>
-<div class="txtTempSet txtTemp1">
-	<span>
-	①　Steamのライブラリの『Baldur's Gate II EE』を右クリック<br />
-	②　プロパティ<br />
-	③　ゲームバージョンとベータ<br />
-	④　bgiiee_2.5を選択<br />
-	⑤　ダウンロードが終わるまで待った<br />
-	ゲームのタイトル画面の上部に表示されたバージョンが2.5になった。
-	<img src="index/img/BG2EEVersion.png" width="400">
-</span>
-</div>
-<p class="chapter5">Step2 日本語化</p>
-<div class="txtTempSet txtTemp1">
-	<span>
-	①　日本語化パッチを入手<br />
-	　<a href="https://wikiwiki.jp/gorion/Japanese?utm_source=chatgpt.com">BGEE Spoiler Wikiの日本語化ページ</a>のリンクをたどって『BG2EE日本語化パッチ_2.5.zip』をダウンロードした。<br />
-	②　パッチの適用<br />
-	　パッチを解凍するとlang,override,Portraitsの３つのフォルダができた。<br />
-	　lang,overrideフォルダをゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\<br />
-	　Baldur's Gate II Enhanced Edition）にコピーした。<br />
-	③　日本語を選択<br />
-	　ゲームを起動して、languageからJapaneseを選択した。<br />
-	</span>
-</div>
-<p class="chapter5">Step3 UIの改善</p>
-<div class="txtTempSet txtTemp1">
-	<span>
-	①　LeUIを入手<br />
-	　<a href="https://github.com/r-e-d/LeUI?utm_source=chatgpt.com">LeUIの公式GitHub</a>のリンクをたどって『lefreuts-enhanced-ui-bg2ee-skin-4.3.2.zip』をダウンロードした。<br />
-	②　LeUIの適用<br />
-	　ゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate II Enhanced Edition）に<br />
-	　LeUIを解凍した。<br />
-	　setup-LeUI.exeを実行した。<br />
-	</span>
+                    <h2>最初に</h2>
+						<p>BGEE2は英語版のみなので、下記の３ステップで環境を整えた。<br />
+						Step1 BG2EEを2.5にする。（日本語化パッチが2.5にしか対応していないため）<br />
+						Step2 日本語化<br />
+						Step3 UIの改善<br />
+						</p>
+                </div>
+
+                <!-- 本文 -->
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<a id="portrait" name="portrait"></a>	
-<p class="chapter6">ポートレートの変更</p>
-<div class="txtTempSet txtTemp1">
-	<span>
-	BGはポートレートはいまいちなので、ポートレートパックから選択して、<A href="index/img/portraits.zip" download>これ</A>を使った。<br />
-	解凍して、ゲームデータフォルダ（C:\\Users\\\<ユーザー名\>\\Documents\\Baldur's Gate II - Enhanced Edition）にコピーした。<br />
-	ちなみに、ゲームデータをバックアップするときは、上記ゲームデータフォルダを丸ごと保存するとよい。
-	</span>
-</div>
+<include id="footer.html"></include>
 
-<a id="makeChar" name="makeChar"></a>	
-<p class="chapter6">主人公</p>
-<div class="txtTempSet txtTemp1">
-	<span>
-	〇魔法<br />
-	Level1 クロマティックオーブ/マジックミサイル/シールド/スプーク/アイデンティファイ<br />
-	Level2 ミラーイメージ/ノック/ウェブ<br />
-	Level3 スカルトラップ/ヘイスト<br />
-	<img src="index/img/Claude.png" width="800">
-	</span>
-	<div style="position: relative;">
-	<p></p>
-	<img 
-		src="index/img/Snow_Jump_100ms_1500pt_wait3s.gif"
-		width="1500"
-		style="
-		position: absolute;
-		left: -800px;
-		bottom: 00;
-		">
-	</div>
-</div>
-					
-				</div><!-- div#mainContents END -->
-				<div id="leftContents">
-					<a id="Top" name="Top"></a>
-					<ul id="subNavigation" class="bgList5">
-						<li><a href="#install" title="install">最初に</a></li>
-
-					</ul>
-					<br />
-					<include id='cm.html'></include>
-				</div><!-- div#leftContents END -->
-			</div><!-- div#wrapBox END -->
-		</div><!-- div#wrapBg END -->
-
-<include id='copy.html'></include>
-
-	</div>
-<script type='text/javascript' src='incl.js'></script>
 </body>
-</html>
