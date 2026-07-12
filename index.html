@@ -16,9 +16,13 @@
 
 <link rel="stylesheet" href="css/index.css">
 <script src="incl.js" defer></script>
-
+<script>
+function changeSpeed(button, speed) {
+    const video = button.parentElement.previousElementSibling;
+    video.playbackRate = speed;
+}
+</script>
 </head>
-
 
 <body>
 
@@ -39,11 +43,11 @@
                     <h2>目次</h2>
 
                     <ul>
-                        <li><a href="#install">最初に</a></li>
-                        <li><a href="#portrait">ポートレート</a></li>
-                        <li><a href="#magic">魔法</a></li>
+                        <li><a href="#intro">最初に</a></li>
+                        <li><a href="#chapter1">一章</a></li>
                     </ul>
 
+                    <a id="intro"></a>
                     <h2>最初に</h2>
 						<p>BG2EEをソーサラーでプレイしてみようと思う。<br />
 						日本語でプレイしようとすると、パッチが必要など、ゲーム以外のノウハウも必要なので備忘録としてまとめる。<br />
@@ -133,6 +137,30 @@
                             bottom: 00;
                             ">
                         </div>
+
+                    <a id="chapter1"></a>
+                    <h2>一章</h2>
+						<p>今回はエアリーと二人旅をしようと思う。<br />
+                        ソーサラーなので、序盤から経験値を稼ぎたい。イレニカスのダンジョンは、ソロで行ってみた。<br />
+                        魔法切れで休憩する時に、最初は休憩中にモンスターに襲われないか心配だったが、イレニカスのダンジョンではほとんど襲われない仕様らしくソーサラーにとってはありがたかった。<br />
+                        
+						</p>
+                        <br />
+                    <h3>イレニカスのダンジョン１</h3>
+                        <select onchange="chapter1_1.playbackRate=this.value">
+                            <option value="1" selected>1倍</option>
+                            <option value="2">2倍</option>
+                            <option value="5">5倍</option>
+                            <option value="10">10倍</option>
+                            <option value="30">30倍</option>
+                        </select>
+                        <video id="chapter1_1"
+                            src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-1.mp4" 
+                            controls 
+                            preload="metadata" 
+                            style="max-width: 100%; cursor: pointer;"
+                            onclick="this.setAttribute('controls', true); this.play();"
+                        ></video>
                 </div>
 
                 <!-- 本文 -->
