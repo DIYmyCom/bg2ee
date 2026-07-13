@@ -142,12 +142,12 @@ function changeSpeed(button, speed) {
 
                     <a id="chapter1"></a>
                     <h2>一章</h2>
+                    <h3>イレニカスのダンジョン</h3>
 						<p>今回はエアリーと二人旅をしようと思う。<br />
                         ソーサラーなので、序盤から経験値を稼ぎたい。イレニカスのダンジョンは、ソロで行ってみた。<br />
                         魔法切れで休憩する時に、最初は休憩中にモンスターに襲われないか心配だったが、イレニカスのダンジョンではほとんど襲われない仕様らしくソーサラーにとってはありがたい。<br />
                         頻繁に休憩する必要があったが、何とかソロで攻略できた。
 						</p>
-                    〇イレニカスのダンジョン<br />
                         <select onchange="chapter1_1.playbackRate=this.value">
                             <option value="1" selected>1倍</option>
                             <option value="2">2倍</option>
@@ -157,6 +157,27 @@ function changeSpeed(button, speed) {
                         </select>
                         <video id="chapter1_1"
                             src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-1-Irenicus's Dungeon.mp4" 
+                            controls 
+                            preload="metadata" 
+                            style="max-width: 100%; cursor: pointer;"
+                            onclick="this.setAttribute('controls', true); this.play();"
+                        ></video>
+                    <h3>サーカス テント</h3>
+						<p>エアリーを仲間にするのと<a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B9" target="_blank" >リング・オブ・ヒューマンインフルエンス</a>
+                            を入手するために、まず、サーカステントに向かった。<br />
+                            イレニカスのダンジョンに入手したアイテムは、リング・オブ・ヒューマンインフルエンス入手後にアドベンチャー・マートで売った。<br />
+                            ワンド類は、店に売るとフルチャージされるので、余裕ができたら買い戻せるようにライバルドに売った。<br />
+                            直近は、『Robe of Vecna』と『Sling of Everard』を購入したいが、どちらも20000G越えですぐには買えない。（今の所持金は6000G程度）<br />
+						</p>
+                        <select onchange="chapter1_2.playbackRate=this.value">
+                            <option value="1" selected>1倍</option>
+                            <option value="2">2倍</option>
+                            <option value="5">5倍</option>
+                            <option value="10">10倍</option>
+                            <option value="15">15倍</option>
+                        </select>
+                        <video id="chapter1_2"
+                            src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-2-CircusTent.mp4" 
                             controls 
                             preload="metadata" 
                             style="max-width: 100%; cursor: pointer;"
