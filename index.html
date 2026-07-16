@@ -45,16 +45,8 @@ function changeSpeed(button, speed) {
                     <ul>
                         <li><a href="#intro">最初に</a></li>
                         <li><a href="#chapter1">一章</a></li>
+                        <li><a href="#chapter2">二章</a></li>
                     </ul>
-
-                    <a id="intro"></a>
-                    <h2>最初に</h2>
-						<p>BG2EEをソーサラーでプレイしてみようと思う。😋<br />
-						日本語でプレイしようとすると、パッチが必要など、ゲーム以外のノウハウも必要なので備忘録としてまとめる。<br />
-						以前プレイしたゲームの自キャラのSnow（→）と共に楽しく記録していきたい。✨<br />
-                        私はこのゲームがうまいわけでも何でもないが、時々発作に襲われて、周期的にプレイしたくなるので、<br />
-                        自衛のためにプレイ動画をまとめようと思う😅
-						</p>
 							<div style="position: relative;">
 							<p></p>
 							<img 
@@ -66,6 +58,15 @@ function changeSpeed(button, speed) {
 								bottom: 00;
 								">
 							</div>
+                    <a id="intro"></a>
+                    <h2>最初に</h2>
+						<p>BG2EEをソーサラーでプレイしてみようと思う。😋<br />
+						日本語でプレイしようとすると、パッチが必要など、ゲーム以外のノウハウも必要なので備忘録としてまとめる。<br />
+						以前プレイしたゲームの自キャラのSnow（→）と共に楽しく記録していきたい。✨<br />
+                        私はこのゲームがうまいわけでも何でもないが、時々発作に襲われて、周期的にプレイしたくなるので、<br />
+                        自衛のためにプレイ動画をまとめようと思う😅
+						</p>
+
                     <h3>日本語化</h3>
 						<p>BGEE2は英語版のみなので、下記の３ステップで環境を整えた。<br />
 						Step1 BG2EEを2.5に変更（日本語化パッチが2.5にしか対応していないため）<br />
@@ -171,20 +172,22 @@ function changeSpeed(button, speed) {
                             ワンド類は、店に売るとフルチャージされるので、余裕ができたら買い戻せるようにライバルドに売った。<br />
                             直近は、『Robe of Vecna』と『Sling of Everard』を購入したいが、どちらも20000G越えですぐには買えない。（今の所持金は6000G程度）<br />
 						</p>
-                        <select onchange="chapter1_2.playbackRate=this.value">
+                        <select onchange="chapter2_1.playbackRate=this.value">
                             <option value="1" selected>1倍</option>
                             <option value="2">2倍</option>
                             <option value="5">5倍</option>
                             <option value="10">10倍</option>
                             <option value="15">15倍</option>
                         </select>
-                        <video id="chapter1_2"
+                        <video id="chapter2_1"
                             src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-2-CircusTent.mp4" 
                             controls 
                             preload="metadata" 
                             style="max-width: 100%; cursor: pointer;"
                             onclick="this.setAttribute('controls', true); this.play();"
                         ></video>
+                    <a id="chapter2"></a>
+                    <h2>二章</h2>
                     <h3>ウォッチャーズキープ１階</h3>
 						<p><a href="https://wikiwiki.jp/gorion/%E3%83%AD%E3%83%BC%E3%83%96%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%B4%E3%82%A7%E3%82%AF%E3%83%8A" target="_blank" >ローブ・オブ・ヴェクナ</a>
                             の購入資金を調達するため、ウォッチャーズキープ１階を攻略した。<br />
