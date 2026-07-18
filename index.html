@@ -22,6 +22,99 @@ function changeSpeed(button, speed) {
     video.playbackRate = speed;
 }
 </script>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            padding: 20px;
+            margin: 0;
+        }
+        .table-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        /* ヘッダー1行目（主人公・エアリー） */
+        .header-main {
+            background-color: #2c3e50;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* ヘッダー2行目（名称・主な能力・入手場所） */
+        .header-sub {
+            background-color: #34495e;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        /* 分類列 */
+        .category-cell {
+            background-color: #f1f5f9;
+            font-weight: bold;
+            color: #475569;
+            width: 80px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        /* セル内の改行を有効にする */
+        .content-cell {
+            white-space: pre-line;
+        }
+        /* 行のホバー効果 */
+        tr:hover td:not(.category-cell):not(.header-main):not(.header-sub) {
+            background-color: #f8fafc;
+        }
+        
+        /* 指定色のスタイル */
+        .blue-row td { color: #0000ff; }
+        .green-row td { color: #008000; }
+        .red-row td { color: #ff0000; }
+        .black-row td { color: #000000; }
+        
+        /* 独立した行（武器・頭など）でセルごとに対象が分かれる場合の個別カラークラス */
+        .blue-cell { color: #0000ff !important; font-weight: bold; }
+        .green-cell { color: #008000 !important; font-weight: bold; }
+        .red-cell { color: #ff0000 !important; font-weight: bold; }
+        .black-cell { color: #000000 !important; font-weight: bold; }
+
+        /* リンク共通設定 */
+        a {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+        .blue-cell a, .blue-row a { color: #0000ff; }
+        .green-cell a, .green-row a { color: #008000; }
+        .red-cell a, .red-row a { color: #ff0000; }
+        .black-cell a, .black-row a { color: #000000; }
+    </style>
+
 </head>
 
 <body>
@@ -211,10 +304,320 @@ function changeSpeed(button, speed) {
                             style="max-width: 100%; cursor: pointer;"
                             onclick="this.setAttribute('controls', true); this.play();"
                         ></video>
+
+                    <h3>キャラクタの育成とクエストの進め方</h3>
+						<p>
+                主人公とエアリーの装備は、最終的には下記をそろえたい。<br />
+                青：２章では取得できない。緑：現時点で取得済。赤：現在優先して取得したい。黒：２章で取得できるもの。<br />
+                このように２章でもかなりの装備が取得できそうなので、当面はこれらの装備の取得を目的にクエストをこなしていこうを思う。😋<br />
+ <div class="table-container">
+    <h1>装備</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="category-cell" style="color:#fff;">部位</th>
+                <th colspan="3" class="header-main" style="border-right: 2px solid #fff;">主人公</th>
+                <th colspan="3" class="header-main">エアリー</th>
+            </tr>
+            <tr>
+                <th class="header-sub">名称</th>
+                <th class="header-sub">主な能力</th>
+                <th class="header-sub" style="border-right: 2px solid #fff;">入手場所</th>
+                <th class="header-sub">名称</th>
+                <th class="header-sub">主な能力</th>
+                <th class="header-sub">入手場所</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 武器 -->
+            <tr>
+                <td rowspan="3" class="category-cell" style="color:#475569;">武器</td>
+                <td class="blue-cell">Staff of the Magi</td>
+                <td class="content-cell blue-cell">①常時インビジビリティ（最強の能力）
+② Spell Trap（呪文吸収）を1日1回使用可能
+強化値：+5
+THAC0補正：+5
+ダメージ補正：+5
++2 ACボーナス(自分のACが２下がる）</td>
+                <td class="content-cell blue-cell" style="border-right: 2px solid #e2e8f0;">ボダイ（Bodhi）の墓地ギルドで吸血鬼のボスから入手（Chapter 6終盤）。最強クラスの杖。</td>
+                
+                <td class="blue-cell">Staff of the Ram</td>
+                <td class="content-cell blue-cell">強化値：＋４
+THAC0：+4
+速度ファクター：１
+特殊効果：10%の確率で敵をノックバック＋スタン</td>
+                <td class="content-cell blue-cell">ウォッチャーズ・キープ5階で入手。ToBでも強力。</td>
+            </tr>
+            <tr>
+                <td class="red-cell">Staff of Rynn +4</td>
+                <td class="content-cell red-cell">強化値：＋４
+THAC0：+4
+速度ファクター：１</td>
+                <td class="content-cell red-cell" style="border-right: 2px solid #e2e8f0;">アドベンチャラーマートで購入。序盤から買える最強クラスの武器。</td>
+                
+                <td class="black-cell">Flail of Ages</td>
+                <td class="content-cell black-cell">強化値：+3
+THAC0：+3
+火・冷気・酸の追加ダメージ
+33%で敵をスロー（魔法抵抗・セーヴ無視）
+ToBでは+5まで強化可能。</td>
+                <td class="content-cell black-cell">デ・アルニス城（ナリアのクエスト）</td>
+            </tr>
+            <tr>
+                <td class="green-cell">Crimson Dart +3</td>
+                <td class="content-cell green-cell">強化値 +3
+THAC0 +3
+特殊能力 投げると手元に戻る（Returning Dart）</td>
+                <td class="content-cell green-cell" style="border-right: 2px solid #e2e8f0;">ウオッチャーズキープ１階</td>
+                
+                <td class="red-cell">Sling of Everard</td>
+                <td class="content-cell red-cell">強化値：+5
+THAC0：+5
+特殊：弾薬不要
+攻撃：常時魔法弾を発射</td>
+                <td class="content-cell red-cell">コッパー・コロネット（Copper Coronet）の追加商人 Joluv が販売（EE版・ボーナス商人有効時）。価格は約25,000G。弾を無限に生成するため、弾を持ち歩く必要がありません。</td>
+            </tr>
+
+            <!-- ローブ -->
+            <tr>
+                <td class="category-cell" style="color:#475569;">ローブ</td>
+                <td class="green-cell">Robe of Vecna</td>
+                <td class="content-cell green-cell">AC 5
+全セービングスロー +2
+詠唱速度：-4</td>
+                <td class="content-cell green-cell" style="border-right: 2px solid #e2e8f0;">アドベンチャラーマート2階奥にいる追加商人のDeidreが販売 23800</td>
+                
+                <td class="black-cell">Robe of the Good Archmagi</td>
+                <td class="content-cell black-cell">AC 5
+魔法抵抗 +5%
+セービングスロー:+1</td>
+                <td class="content-cell black-cell">トレードミート（Trademeet）の鍛冶屋（Smithy）が販売。30,750G</td>
+            </tr>
+
+            <!-- アミュレット -->
+            <tr>
+                <td class="category-cell" style="color:#475569;">アミュレット</td>
+                <td class="blue-cell">Amulet of Power</td>
+                <td class="content-cell blue-cell">詠唱速度：-1
+レベルドレイン耐性：完全無効
+Vocalize効果：沈黙（Silence）状態でも呪文を詠唱可能
+魔法抵抗：+5%</td>
+                <td class="content-cell blue-cell" style="border-right: 2px solid #e2e8f0;"><strong>アラン・リヴェイル（Aran Linvail）</strong>のクエストを進めると報酬として入手。Chapter 3で取得可能。</td>
+                
+                <td class="green-cell">Amulet of Metaspell Influence</td>
+                <td class="content-cell green-cell">追加呪文 レベル2呪文スロット +1</td>
+                <td class="content-cell green-cell">イレニカスのダンジョン1階 マスター（Master）の部屋</td>
+            </tr>
+
+            <!-- 手 -->
+            <tr class="red-row">
+                <td class="category-cell" style="color:#475569;">手</td>
+                <td>Bracers of Defense AC 3</td>
+                <td class="content-cell">AC 3</td>
+                <td class="content-cell" style="border-right: 2px solid #e2e8f0;">アドベンチャラーズ・マート9,750G</td>
+                
+                <td>Bracers of Defense AC 4</td>
+                <td class="content-cell">AC 4</td>
+                <td class="content-cell">アドベンチャラーズ・マート7,500G</td>
+            </tr>
+
+            <!-- 指輪１ -->
+            <tr class="black-row">
+                <td class="category-cell" style="color:#475569;">指輪１</td>
+                <td>Ring of Gaxx</td>
+                <td class="content-cell">AC：＋２
+セービングスロー：+2（全セービングスロー）
+魔法抵抗：+10%
+毒耐性：毒完全無効
+病気耐性：病気完全無効
+自動回復：3秒ごとにHPを1回復
+Improved Haste（3回/日）
+Invisibility（1回/日）</td>
+                <td class="content-cell" style="border-right: 2px solid #e2e8f0;"><strong>カンガックス（Kangaxx）</strong>を倒すと入手。ゲーム最強クラスの指輪。</td>
+                
+                <td>Ring of Regeneration</td>
+                <td class="content-cell">毎ラウンド（6秒）にHP +1回復</td>
+                <td class="content-cell">アドベンチャラーマートのリボルド（Ribald）からスリで入手（倒しても可だが非推奨）。</td>
+            </tr>
+
+            <!-- 指輪２ -->
+            <tr class="black-row">
+                <td class="category-cell" style="color:#475569;">指輪２</td>
+                <td>Ring of Acuity</td>
+                <td class="content-cell">メイジ呪文増加
+レベル2呪文：+2スロット
+レベル3呪文：+1スロット
+レベル4呪文：+1スロット</td>
+                <td class="content-cell" style="border-right: 2px solid #e2e8f0;">プレイナー・スフィアのクエスト最奥部で老魔術師 ラヴォック（Lavok） に会い、クエストを最後まで進めると、ラヴォックの遺体から Ring of Acuity を入手</td>
+                
+                <td>-</td>
+                <td class="content-cell">-</td>
+                <td class="content-cell">-</td>
+            </tr>
+
+            <!-- ブーツ -->
+            <tr class="black-row">
+                <td class="category-cell" style="color:#475569;">ブーツ</td>
+                <td>Boots of Speed</td>
+                <td class="content-cell">移動速度2倍</td>
+                <td class="content-cell" style="border-right: 2px solid #e2e8f0;">プレナー・スフィア（Planar Sphere） の内部で入手できます。ヴァリアガー（Valygar）のクエストで入るダンジョン内にあるので、Chapter 2から取得可能です。移動速度が2倍になり、全キャラクターにとって最強クラスのブーツです。</td>
+                
+                <td>Boots of Avoidance</td>
+                <td class="content-cell">飛び道具による攻撃を50%軽減
+Magic Missile（マジックミサイル）には効かない</td>
+                <td class="content-cell">ヘルム寺院の「人質救出（レイエン救出）」クエストの報酬。飛び道具ACが大幅に向上。</td>
+            </tr>
+
+            <!-- 頭 -->
+            <tr>
+                <td rowspan="2" class="category-cell" style="color:#475569;">頭</td>
+                <td class="blue-cell">Bronze Ioun Stone</td>
+                <td class="content-cell blue-cell">レベル7呪文スロット+1</td>
+                <td class="content-cell blue-cell" style="border-right: 2px solid #e2e8f0;">ToB サラドゥシュ関連</td>
+                
+                <td class="black-cell">Vhailor's Helm</td>
+                <td class="content-cell black-cell">AC -1
+Simulacrum（シミュレイクラム）を1日1回使用可能</td>
+                <td class="content-cell black-cell">アドベンチャラーズ・マート2階 ディードラ（Deidre）から購入</td>
+            </tr>
+            <tr>
+                <td class="blue-cell">Dusty Rose Ioun Stone</td>
+                <td class="content-cell blue-cell">AC +1</td>
+                <td class="content-cell blue-cell" style="border-right: 2px solid #e2e8f0;">スペルホールド地下（Spellhold Dungeon）</td>
+                
+                <td class="black-cell">Pearly White Ioun Stone</td>
+                <td class="content-cell black-cell">5ラウンドごとにHP 1回復</td>
+                <td class="content-cell black-cell">ウマー・ヒルズ（Umar Hills） 第1階層（Temple Ruins Dungeon Level 1）溶岩の部屋（Lava Room）</td>
+            </tr>
+
+            <!-- ベルト -->
+            <tr>
+                <td class="category-cell" style="color:#475569;">ベルト</td>
+                <td class="red-cell">Belt of Inertial Barrier</td>
+                <td class="content-cell red-cell">魔法ダメージ耐性 +50%
+飛び道具耐性 +25%
+セービングスロー（ブレス） +5</td>
+                <td class="content-cell red-cell" style="border-right: 2px solid #e2e8f0;">トレードミートの商人（バザールの露店）が販売 18,750G</td>
+                
+                <td class="black-cell">Girdle of Hill Giant Strength</td>
+                <td class="content-cell black-cell">STR 19</td>
+                <td class="content-cell black-cell">アドベンチャラーズ・マート（Adventure Mart）15,000G</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br />
+                主人公の魔法は、これらを取得する見込み。<br />
+                青：キャラクタ作成時（Level7)、緑：Level10、赤：Level11で取得済の魔法<br />
+
+<div class="table-container">
+    <h1>主人公（ソーサラー）の魔法</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="category-cell" style="color:#fff;">レベル</th>
+                <th class="header-main">スロット１</th>
+                <th class="header-main">スロット２</th>
+                <th class="header-main">スロット３</th>
+                <th class="header-main">スロット４</th>
+                <th class="header-main">スロット５</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 1</td>
+                <td class="blue-cell">クロマティックオーブ</td>
+                <td class="blue-cell">マジックミサイル</td>
+                <td class="blue-cell">シールド</td>
+                <td class="blue-cell">スプーク</td>
+                <td class="blue-cell">アイデンティファイ</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 2</td>
+                <td class="blue-cell">ミラーイメージ</td>
+                <td class="blue-cell">ノック</td>
+                <td class="blue-cell">ウェブ</td>
+                <td class="green-cell">インヴィジビリティ</td>
+                <td class="red-cell">ブラー</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 3</td>
+                <td class="blue-cell">スカルトラップ</td>
+                <td class="blue-cell">ヘイスト</td>
+                <td class="green-cell">スロー</td>
+                <td class="red-cell">メルフズ・ミニット・メテオズ</td>
+                <td>リムーブマジック</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 4</td>
+                <td class="green-cell">ストーンスキン</td>
+                <td class="green-cell">グレーター・マリソン</td>
+                <td class="red-cell">インプルーヴド・インヴィジビリティ</td>
+                <td>マイナー・シーケンサー</td>
+                <td>シークレットワード</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 5</td>
+                <td class="green-cell">ブリーチ</td>
+                <td class="red-cell">アニメイトデッド</td>
+                <td>スペルイミュニティ</td>
+                <td>ローワーレジスタンス</td>
+                <td>スペルシールド</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 6</td>
+                <td>インプルーヴド・ヘイスト</td>
+                <td>トゥルーサイト</td>
+                <td>プロテクション・フロム・マジカルウェポン</td>
+                <td>ピアースマジック</td>
+                <td>コンティンジェンシー</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 7</td>
+                <td>モルデンカイネンズソード</td>
+                <td>プロジェクトイメージ</td>
+                <td>スペルシーケンサー</td>
+                <td>ルビーレイ・オブ・リヴァーサル</td>
+                <td>Finger of Death?</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 8</td>
+                <td>アビ・ダルジムズ・ホリッド・ウィルティング</td>
+                <td>シミュレイクラム</td>
+                <td>スペルトリガー</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="category-cell" style="color:#475569;">Level 9</td>
+                <td>タイムストップ</td>
+                <td>ウィッシュ</td>
+                <td>スペルストライク</td>
+                <td>チェインコンティンジェンシー</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+                    <h3>トレードミート</h3>
+						<p>						</p>
+                        <select onchange="chapter2_2.playbackRate=this.value">
+                            <option value="1" selected>1倍</option>
+                            <option value="2">2倍</option>
+                            <option value="5">5倍</option>
+                            <option value="10">10倍</option>
+                            <option value="15">15倍</option>
+                        </select>
+                        <video id="chapter2_2"
+                            src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter2-1-WatchersKeep1.mp4" 
+                            controls 
+                            preload="metadata" 
+                            style="max-width: 100%; cursor: pointer;"
+                            onclick="this.setAttribute('controls', true); this.play();"
+                        ></video>
                 </div>
-
                 <!-- 本文 -->
-
             </div>
 
         </div>
