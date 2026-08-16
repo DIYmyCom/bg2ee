@@ -17,7 +17,6 @@
 <link rel="stylesheet" href="css/index.css">
 <script src="incl.js" defer></script>
 <script>
-document.getElementById('chapter1_1').playbackRate = 10.0;
 function changeSpeed(button, speed) {
     const video = button.parentElement.previousElementSibling;
     video.playbackRate = speed;
@@ -508,6 +507,9 @@ function changeSpeed(button, speed) {
                             style="max-width: 100%; cursor: pointer;"
                             onclick="this.setAttribute('controls', true); this.play();"
                         ></video>
+                      <script>
+                          document.getElementById('chapter1_1').playbackRate = 10;
+                      </script>
                 </div>
                 <!-- 本文 -->
             </div>
