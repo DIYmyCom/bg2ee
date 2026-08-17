@@ -120,452 +120,528 @@ function changeSpeed(button, speed) {
 <body>
 
 <div id="wrapper">
-
     <include id="menu.html"></include>
-
     <div id="wrapBg">
-
         <div class="container">
-
             <div id="mainContents">
-
                 <a id="top"></a>
-
                 <div id="toc">
-				    <div style="display:flex; justify-content:center;"><p><img src="img/main.jpg" width=100% alt="" /></p></div>
-                    <h2>目次</h2>
-
-                    <ul>
-                        <li><a href="#intro">最初に</a></li>
-                        <li><a href="#chapter1">一章</a></li>
-                        <li><a href="#chapter2">二章</a></li>
-                    </ul>
-							<div style="position: relative;">
-							<p></p>
-							<img 
-								src="img/Snow_CheerfulDance_80ms_800pt.gif"
-								width="800"
-								style="
-								position: absolute;
-								left: 450px;
-								bottom: 00;
-								">
-							</div>
-                    <a id="intro"></a>
-                    <h2>最初に</h2>
-						<p>BG2EEをソーサラーでプレイしてみようと思う。😋<br />
-						日本語でプレイしようとすると、パッチが必要など、ゲーム以外のノウハウも必要なので備忘録としてまとめる。<br />
-						以前プレイしたゲームの自キャラの<a href="http://basic001.cloudfree.jp/Snow.html" target="_blank" style="text-decoration: underline; color: #0066cc;">Snow</a>と共に楽しく記録していきたい。✨<br />
-                        私はこのゲームがうまいわけでも何でもないが、時々発作に襲われて、周期的にプレイしたくなるので、<br />
-                        自衛のためにプレイ動画をまとめようと思う😅
-						</p>
-
-                    <h3>日本語化</h3>
-						<p>BGEE2は英語版のみなので、下記の３ステップで環境を整えた。<br />
-						Step1 BG2EEを2.5に変更（日本語化パッチが2.5にしか対応していないため）<br />
-						Step2 日本語化<br />
-						Step3 UIの改善<br />
-						</p>
-                    <h4>Step1 BG2EEを2.5に変更</h4>
-							<div style="position: relative;">
-							<p></p>
-							<img 
-								src="img/BG2EEVersion.png"
-								width="500"
-								style="
-								position: absolute;
-								right: 50px;
-								top: 00;
-								">
-							</div>
-                        <p>
-                        ①　Steamのライブラリの『Baldur's Gate II EE』を右クリック<br />
-                        ②　プロパティ<br />
-                        ③　ゲームバージョンとベータ<br />
-                        ④　bgiiee_2.5を選択<br />
-                        ⑤　ダウンロードが終わるまで待った<br />
-                        ゲームのタイトル画面の上部に表示されたバージョンが2.5になった。
-                        </p>
-                    <h4>Step2 日本語化</h4>
-                        <p>
-                        ①　日本語化パッチを入手<br />
-                        　<a href="https://wikiwiki.jp/gorion/Japanese?utm_source=chatgpt.com">BGEE Spoiler Wikiの日本語化ページ</a>のリンクをたどって『BG2EE日本語化パッチ_2.5.zip』をダウンロードした。<br />
-                        ②　パッチの適用<br />
-                        　パッチを解凍するとlang,override,Portraitsの３つのフォルダができた。<br />
-                        　lang,overrideフォルダをゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate II Enhanced Edition）にコピーした。<br />
-                        ③　日本語を選択<br />
-                        　ゲームを起動して、languageからJapaneseを選択した。<br />
-                        </p>
-                    <h4>Step3 UIの改善</h4>
-                        <p>
-                        ①　LeUIを入手<br />
-                        　<a href="https://github.com/r-e-d/LeUI?utm_source=chatgpt.com">LeUIの公式GitHub</a>のリンクをたどって『lefreuts-enhanced-ui-bg2ee-skin-4.3.2.zip』をダウンロードした。<br />
-                        ②　LeUIの適用<br />
-                        　ゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate II Enhanced Edition）に<br />
-                        　LeUIを解凍した。<br />
-                        　setup-LeUI.exeを実行した。<br />
-                        </p>
-                    <a id="portrait" name="portrait"></a>	
-                    <h3>ポートレートの変更</h3>
-                        <p>
-                        BGはポートレートはいまいちなので、ポートレートパックから選択して、<A href="img/portraits.zip" download>これ</A>を使った。<br />
-                        解凍して、ゲームデータフォルダ（C:\\Users\\\<ユーザー名\>\\Documents\\Baldur's Gate II - Enhanced Edition）にコピーした。<br />
-                        ちなみに、ゲームデータをバックアップするときは、このゲームデータフォルダを丸ごと保存するとよい。
-                        </p>
-                    <a id="makeChar" name="makeChar"></a>	
-                    <h3>主人公</h3>
-                        <p>
-                        〇魔法<br />
-                        Level1 クロマティックオーブ/マジックミサイル/シールド/スプーク/アイデンティファイ<br />
-                        Level2 ミラーイメージ/ノック/ウェブ<br />
-                        Level3 スカルトラップ/ヘイスト<br />
-                        </p>
-                        <img src="img/Claude.png" width="800">
-                        </span>
-                        <div style="position: relative;">
-                        <p></p>
-                        <img 
-                            src="img/Snow_Jump_100ms_1500pt_wait3s.gif"
-                            width="1500"
-                            style="
-                            position: absolute;
-                            left: 100px;
-                            bottom: 00;
-                            ">
-                        </div>
-                    <h3>ゲームプレイ設定</h3>
-                        <p>
-                        ゲームプレイ設定は、『難易度はコアルール』、『レベルアップ時最大HP』、『弾切れ時近接攻撃に移らない』にした。
-                        </p>
-                        <img src="img/GamePlaySetting1.png" width="800">
-                        <img src="img/GamePlaySetting2.png" width="800">
-                        </span>
 
 
-                    <a id="magicPlan" name="magicPlan"></a>	
-                    <h3>主人公魔法　計画/実績</h3>
-                        <p>
-                        レベルごとに下表のように魔法を取得していこうと思う。<br />今回はこのように進めたが、ヘイストとメルフズ・ミニット・メテオズの取得順は入れ替えた方が良かったと反省。<br />
-                        <span style="color:#DEEAF6;">■</span>Level7 <span style="color:#FFD966;">■</span>Level8 <span style="color:#F4B084;">■</span>Level9 <span style="color:#FFFF00;">■</span>Level10 <span style="color:#A9D08E;">■</span>Level11 
-                        <span style="color:#00B0F0;">■</span>Level12 
-                        </p>
-                        <div class="table-container">
-<table border="1" style="border-collapse: collapse; font-family: sans-serif; text-align: center;">
-  <tr>
-    <th  class="header-main">&nbsp;</th>
-    <th  class="header-main">1</th>
-    <th  class="header-main">2</th>
-    <th  class="header-main">3</th>
-    <th  class="header-main">4</th>
-    <th  class="header-main">5</th>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 1</th>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#m1bfa9cb" target="_blank" style="text-decoration: underline; color: #0066cc;">クロマティックオーブ</a></td>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#ya7b77ff" target="_blank" style="text-decoration: underline; color: #0066cc;">マジックミサイル</a></td>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#c22595c1" target="_blank" style="text-decoration: underline; color: #0066cc;">シールド</a></td>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#v9e74161" target="_blank" style="text-decoration: underline; color: #0066cc;">スプーク</a></td>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#z81d3b0f" target="_blank" style="text-decoration: underline; color: #0066cc;">アイデンティファイ</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 2</th>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#kdc5e43f" target="_blank" style="text-decoration: underline; color: #0066cc;">ミラーイメージ</a></td>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#y4465d5d" target="_blank" style="text-decoration: underline; color: #0066cc;">ノック</a></td>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#h968b67a" target="_blank" style="text-decoration: underline; color: #0066cc;">ウェブ</a></td>
-    <td style="background-color: #F4B084; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#z5730cbf" target="_blank" style="text-decoration: underline; color: #0066cc;">メルフズ・アシッドアロー</a></td>
-    <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#db14d575" target="_blank" style="text-decoration: underline; color: #0066cc;">ブラー</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 3</th>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#sd3ff5dc" target="_blank" style="text-decoration: underline; color: #0066cc;">スカル・トラップ</a></td>
-    <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#o704bb51" target="_blank" style="text-decoration: underline; color: #0066cc;">ヘイスト</a></td>
-    <td style="background-color: #F4B084; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#j0b72086" target="_blank" style="text-decoration: underline; color: #0066cc;">メルフズ・ミニット・メテオズ</a></td>
-    <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#t26650da" target="_blank" style="text-decoration: underline; color: #0066cc;">スロー</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#mf3889b5" target="_blank" style="text-decoration: underline; color: #0066cc;">スペル・スラスト</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 4</th>
-    <td style="background-color: #FFD966; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#ib3b52f8" target="_blank" style="text-decoration: underline; color: #0066cc;">ストーンスキン</a></td>
-    <td style="background-color: #F4B084; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#n20ac4a3" target="_blank" style="text-decoration: underline; color: #0066cc;">グレーター・マリソン</a></td>
-    <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#pae6583f" target="_blank" style="text-decoration: underline; color: #0066cc;">インプルーヴド・インヴィジビリティ</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#kf477a1e" target="_blank" style="text-decoration: underline; color: #0066cc;">マイナー・シーケンサー</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#z2f17c78" target="_blank" style="text-decoration: underline; color: #0066cc;">シークレットワード</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 5</th>
-    <td style="background-color: #FFFF00; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#c26cd001" target="_blank" style="text-decoration: underline; color: #0066cc;">アニメイトデッド</a></td>
-    <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#qfaa51f8" target="_blank" style="text-decoration: underline; color: #0066cc;">ブリーチ</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#i418e005" target="_blank" style="text-decoration: underline; color: #0066cc;">ローワーレジスタンス</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#fca18c32" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルイミュニティ</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#m2f59fc1" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルシールド</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 6</th>
-    <td style="background-color: #00B0F0; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#i0755784" target="_blank" style="text-decoration: underline; color: #0066cc;">ピアースマジック</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#j688734d" target="_blank" style="text-decoration: underline; color: #0066cc;">トゥルーサイト</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#h647b542" target="_blank" style="text-decoration: underline; color: #0066cc;">プロテクション・フロム・マジカルウェポン</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#pcf1ff90" target="_blank" style="text-decoration: underline; color: #0066cc;">コンティンジェンシー</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#g283b170" target="_blank" style="text-decoration: underline; color: #0066cc;">インプルーヴド・ヘイスト</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 7</th>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#gdd1cfaf" target="_blank" style="text-decoration: underline; color: #0066cc;">プロジェクトイメージ</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#j5ff4deb" target="_blank" style="text-decoration: underline; color: #0066cc;">リミテッドウイッシュ</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#o0e203df" target="_blank" style="text-decoration: underline; color: #0066cc;">ルビーレイ・オブ・リヴァーサル</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#g0c5fa58" target="_blank" style="text-decoration: underline; color: #0066cc;">モルデンカイネンズソード</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#k9d8cc36" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルシーケンサー</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 8</th>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#n958a700" target="_blank" style="text-decoration: underline; color: #0066cc;">アビ・ダルジムズ・ホリッド・ウィルティング</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#b771f359" target="_blank" style="text-decoration: underline; color: #0066cc;">シミュレイクラム</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#s0002460" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルトリガー</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#kbebb9d3" target="_blank" style="text-decoration: underline; color: #0066cc;">ピアース・シールド</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#p542c721" target="_blank" style="text-decoration: underline; color: #0066cc;">メイズ</a></td>
-  </tr>
-  <tr>
-    <th class="category-cell" style="color:#475569;">Level 9</th>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#j8adfefb" target="_blank" style="text-decoration: underline; color: #0066cc;">タイムストップ</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#y6eca09a" target="_blank" style="text-decoration: underline; color: #0066cc;">チェインコンティンジェンシー</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#h64c618d" target="_blank" style="text-decoration: underline; color: #0066cc;">ウィッシュ</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#vfef77f7" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルストライク</a></td>
-    <td style="padding: 8px 12px; border: 1px solid #ccc;">～</td>
-  </tr>
-</table>
+
+<div style="display:flex; justify-content:center;"><p><img src="img/main.jpg" width=100% alt="" /></p></div>
+<h2>目次</h2>
+
+<ul>
+    <li><a href="#intro">最初に</a></li>
+    <li><a href="#chapter1">一章</a></li>
+    <li><a href="#chapter2">二章</a></li>
+</ul>
+<div style="position: relative;">
+<p></p>
+<img 
+  src="img/Snow_CheerfulDance_80ms_800pt.gif"
+  width="800"
+  style="
+  position: absolute;
+  left: 450px;
+  bottom: 00;
+  ">
+</div>
+<a id="intro"></a>
+<h2>最初に</h2>
+  <p>BG2EEをソーサラーでプレイしてみようと思う。😋<br />
+  日本語でプレイしようとすると、パッチが必要など、ゲーム以外のノウハウも必要なので備忘録としてまとめる。<br />
+  以前プレイしたゲームの自キャラの<a href="http://basic001.cloudfree.jp/Snow.html" target="_blank" style="text-decoration: underline; color: #0066cc;">Snow</a>と共に楽しく記録していきたい。✨<br />
+  私はこのゲームがうまいわけでも何でもないが、時々発作に襲われて、周期的にプレイしたくなるので、<br />
+  自衛のためにプレイ動画をまとめようと思う😅</p>
+
+  <h3>日本語化</h3>
+    <p>BGEE2は英語版のみなので、下記の３ステップで環境を整えた。<br />
+    Step1 BG2EEを2.5に変更（日本語化パッチが2.5にしか対応していないため）<br />
+    Step2 日本語化<br />
+    Step3 UIの改善<br />
+    </p>
+    <h4>Step1 BG2EEを2.5に変更</h4>
+      <div style="position: relative;">
+      <p></p>
+      <img 
+        src="img/BG2EEVersion.png"
+        width="500"
+        style="
+        position: absolute;
+        right: 50px;
+        top: 00;
+        ">
+      </div>
+      <p>
+      ①　Steamのライブラリの『Baldur's Gate II EE』を右クリック<br />
+      ②　プロパティ<br />
+      ③　ゲームバージョンとベータ<br />
+      ④　bgiiee_2.5を選択<br />
+      ⑤　ダウンロードが終わるまで待った<br />
+      ゲームのタイトル画面の上部に表示されたバージョンが2.5になった。
+      </p>
+    <h4>Step2 日本語化</h4>
+        <p>
+        ①　日本語化パッチを入手<br />
+        　<a href="https://wikiwiki.jp/gorion/Japanese?utm_source=chatgpt.com">BGEE Spoiler Wikiの日本語化ページ</a>のリンクをたどって『BG2EE日本語化パッチ_2.5.zip』をダウンロードした。<br />
+        ②　パッチの適用<br />
+        　パッチを解凍するとlang,override,Portraitsの３つのフォルダができた。<br />
+        　lang,overrideフォルダをゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate II Enhanced Edition）にコピーした。<br />
+        ③　日本語を選択<br />
+        　ゲームを起動して、languageからJapaneseを選択した。<br />
+        </p>
+    <h4>Step3 UIの改善</h4>
+        <p>
+        ①　LeUIを入手<br />
+        　<a href="https://github.com/r-e-d/LeUI?utm_source=chatgpt.com">LeUIの公式GitHub</a>のリンクをたどって『lefreuts-enhanced-ui-bg2ee-skin-4.3.2.zip』をダウンロードした。<br />
+        ②　LeUIの適用<br />
+        　ゲームフォルダ（C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate II Enhanced Edition）に<br />
+        　LeUIを解凍した。<br />
+        　setup-LeUI.exeを実行した。<br />
+        </p>
+
+  <a id="portrait" name="portrait"></a>	
+  <h3>ポートレートの変更</h3>
+      <p>
+      BGはポートレートはいまいちなので、ポートレートパックから選択して、<A href="img/portraits.zip" download>これ</A>を使った。<br />
+      解凍して、ゲームデータフォルダ（C:\\Users\\\<ユーザー名\>\\Documents\\Baldur's Gate II - Enhanced Edition）にコピーした。<br />
+      ちなみに、ゲームデータをバックアップするときは、このゲームデータフォルダを丸ごと保存するとよい。
+      </p>
+    <a id="makeChar" name="makeChar"></a>	
+    <h3>主人公</h3>
+        <p>
+        〇魔法<br />
+        Level1 クロマティックオーブ/マジックミサイル/シールド/スプーク/アイデンティファイ<br />
+        Level2 ミラーイメージ/ノック/ウェブ<br />
+        Level3 スカルトラップ/ヘイスト<br />
+        </p>
+        <img src="img/Claude.png" width="800">
+        </span>
+        <div style="position: relative;">
+          <p></p>
+          <img 
+            src="img/Snow_Jump_100ms_1500pt_wait3s.gif"
+            width="1500"
+            style="
+            position: absolute;
+            left: 100px;
+            bottom: 00;
+            ">
+        </div>
+  <h3>ゲームプレイ設定</h3>
+      <p>
+      ゲームプレイ設定は、『難易度はコアルール』、『レベルアップ時最大HP』、『弾切れ時近接攻撃に移らない』にした。
+      </p>
+      <img src="img/GamePlaySetting1.png" width="800">
+      <img src="img/GamePlaySetting2.png" width="800">
+      </span>
+
+
+  <a id="magicPlan" name="magicPlan"></a>	
+  <h3>主人公魔法　計画/実績</h3>
+    <p>
+    レベルごとに下表のように魔法を取得していこうと思う。<br />今回はこのように進めたが、ヘイストとメルフズ・ミニット・メテオズの取得順は入れ替えた方が良かったと反省。<br />
+    <span style="color:#DEEAF6;">■</span>Level7 <span style="color:#FFD966;">■</span>Level8 <span style="color:#F4B084;">■</span>Level9 <span style="color:#FFFF00;">■</span>Level10 <span style="color:#A9D08E;">■</span>Level11 
+    <span style="color:#00B0F0;">■</span>Level12 
+    </p>
+    <div class="table-container">
+      <table border="1" style="border-collapse: collapse; font-family: sans-serif; text-align: center;">
+        <tr>
+          <th  class="header-main">&nbsp;</th>
+          <th  class="header-main">1</th>
+          <th  class="header-main">2</th>
+          <th  class="header-main">3</th>
+          <th  class="header-main">4</th>
+          <th  class="header-main">5</th>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 1</th>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#m1bfa9cb" target="_blank" style="text-decoration: underline; color: #0066cc;">クロマティックオーブ</a></td>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#ya7b77ff" target="_blank" style="text-decoration: underline; color: #0066cc;">マジックミサイル</a></td>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#c22595c1" target="_blank" style="text-decoration: underline; color: #0066cc;">シールド</a></td>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#v9e74161" target="_blank" style="text-decoration: underline; color: #0066cc;">スプーク</a></td>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%201#z81d3b0f" target="_blank" style="text-decoration: underline; color: #0066cc;">アイデンティファイ</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 2</th>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#kdc5e43f" target="_blank" style="text-decoration: underline; color: #0066cc;">ミラーイメージ</a></td>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#y4465d5d" target="_blank" style="text-decoration: underline; color: #0066cc;">ノック</a></td>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#h968b67a" target="_blank" style="text-decoration: underline; color: #0066cc;">ウェブ</a></td>
+          <td style="background-color: #F4B084; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#z5730cbf" target="_blank" style="text-decoration: underline; color: #0066cc;">メルフズ・アシッドアロー</a></td>
+          <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%202#db14d575" target="_blank" style="text-decoration: underline; color: #0066cc;">ブラー</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 3</th>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#sd3ff5dc" target="_blank" style="text-decoration: underline; color: #0066cc;">スカル・トラップ</a></td>
+          <td style="background-color: #DEEAF6; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#o704bb51" target="_blank" style="text-decoration: underline; color: #0066cc;">ヘイスト</a></td>
+          <td style="background-color: #F4B084; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#j0b72086" target="_blank" style="text-decoration: underline; color: #0066cc;">メルフズ・ミニット・メテオズ</a></td>
+          <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#t26650da" target="_blank" style="text-decoration: underline; color: #0066cc;">スロー</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%203#mf3889b5" target="_blank" style="text-decoration: underline; color: #0066cc;">スペル・スラスト</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 4</th>
+          <td style="background-color: #FFD966; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#ib3b52f8" target="_blank" style="text-decoration: underline; color: #0066cc;">ストーンスキン</a></td>
+          <td style="background-color: #F4B084; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#n20ac4a3" target="_blank" style="text-decoration: underline; color: #0066cc;">グレーター・マリソン</a></td>
+          <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#pae6583f" target="_blank" style="text-decoration: underline; color: #0066cc;">インプルーヴド・インヴィジビリティ</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#kf477a1e" target="_blank" style="text-decoration: underline; color: #0066cc;">マイナー・シーケンサー</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%204#z2f17c78" target="_blank" style="text-decoration: underline; color: #0066cc;">シークレットワード</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 5</th>
+          <td style="background-color: #FFFF00; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#c26cd001" target="_blank" style="text-decoration: underline; color: #0066cc;">アニメイトデッド</a></td>
+          <td style="background-color: #A9D08E; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#qfaa51f8" target="_blank" style="text-decoration: underline; color: #0066cc;">ブリーチ</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#i418e005" target="_blank" style="text-decoration: underline; color: #0066cc;">ローワーレジスタンス</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#fca18c32" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルイミュニティ</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/BGEE%20Manual/Wizard%20Spells%E2%80%95Level%205#m2f59fc1" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルシールド</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 6</th>
+          <td style="background-color: #00B0F0; padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#i0755784" target="_blank" style="text-decoration: underline; color: #0066cc;">ピアースマジック</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#j688734d" target="_blank" style="text-decoration: underline; color: #0066cc;">トゥルーサイト</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#h647b542" target="_blank" style="text-decoration: underline; color: #0066cc;">プロテクション・フロム・マジカルウェポン</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#pcf1ff90" target="_blank" style="text-decoration: underline; color: #0066cc;">コンティンジェンシー</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%206#g283b170" target="_blank" style="text-decoration: underline; color: #0066cc;">インプルーヴド・ヘイスト</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 7</th>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#gdd1cfaf" target="_blank" style="text-decoration: underline; color: #0066cc;">プロジェクトイメージ</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#j5ff4deb" target="_blank" style="text-decoration: underline; color: #0066cc;">リミテッドウイッシュ</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#o0e203df" target="_blank" style="text-decoration: underline; color: #0066cc;">ルビーレイ・オブ・リヴァーサル</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#g0c5fa58" target="_blank" style="text-decoration: underline; color: #0066cc;">モルデンカイネンズソード</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%207#k9d8cc36" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルシーケンサー</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 8</th>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#n958a700" target="_blank" style="text-decoration: underline; color: #0066cc;">アビ・ダルジムズ・ホリッド・ウィルティング</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#b771f359" target="_blank" style="text-decoration: underline; color: #0066cc;">シミュレイクラム</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#s0002460" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルトリガー</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#kbebb9d3" target="_blank" style="text-decoration: underline; color: #0066cc;">ピアース・シールド</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%208#p542c721" target="_blank" style="text-decoration: underline; color: #0066cc;">メイズ</a></td>
+        </tr>
+        <tr>
+          <th class="category-cell" style="color:#475569;">Level 9</th>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#j8adfefb" target="_blank" style="text-decoration: underline; color: #0066cc;">タイムストップ</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#y6eca09a" target="_blank" style="text-decoration: underline; color: #0066cc;">チェインコンティンジェンシー</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#h64c618d" target="_blank" style="text-decoration: underline; color: #0066cc;">ウィッシュ</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;"><a href="https://wikiwiki.jp/gorion/Wizard%20Spells/Level%209#vfef77f7" target="_blank" style="text-decoration: underline; color: #0066cc;">スペルストライク</a></td>
+          <td style="padding: 8px 12px; border: 1px solid #ccc;">～</td>
+        </tr>
+      </table>
+    </div>
+
+
+  <a id="weponPlan" name="weponPlan"></a>	
+  <h3>装備　計画</h3>
+    <p>
+    最終的には、下表のような装備を揃えたい。大部分が２章で入手可能なようなので、装備の収集を優先に進めようと思う。<br />
+    </p>
+    <div class="table-container">
+      <table border="1" style="border-collapse: collapse; width: 100%; font-family: sans-serif; text-align: left;">
+        <thead>
+          <tr>
+            <th rowspan="2" style="background-color: #f2f2f2; padding: 8px; text-align: center;">部位</th>
+            <th colspan="3" style="background-color: #f2f2f2; padding: 8px; text-align: center;">主人公</th>
+            <th colspan="3" style="background-color: #f2f2f2; padding: 8px; text-align: center;">エアリー</th>
+          </tr>
+          <tr>
+            <th style="background-color: #f2f2f2; padding: 8px;">名称</th>
+            <th style="background-color: #f2f2f2; padding: 8px;">入手場所</th>
+            <th style="background-color: #f2f2f2; padding: 8px;">主な効果</th>
+            <th style="background-color: #f2f2f2; padding: 8px;">名称</th>
+            <th style="background-color: #f2f2f2; padding: 8px;">入手場所</th>
+            <th style="background-color: #f2f2f2; padding: 8px;">主な効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="4" style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">武器</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%9E%E3%82%AE" target="_blank" rel="noopener noreferrer">スタッフ・オブ・マギ</a></td>
+            <td style="padding: 8px; vertical-align: top;">ボダイ（Bodhi）の墓地ギルドで吸血鬼のボスから入手（Chapter 6終盤）</td>
+            <td style="padding: 8px; vertical-align: top;">透明化</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="フレイル・オブ・エイジス+3" target="_blank" rel="noopener noreferrer">フレイル・オブ・エイジス+5</a></td>
+            <td style="padding: 8px; vertical-align: top;">デ・アルニス城（ナリアのクエスト）</td>
+            <td style="padding: 8px; vertical-align: top;">属性攻撃</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%A9%E3%83%A0%2B6" target="_blank" rel="noopener noreferrer">スタッフ・オブ・ラム+6</a></td>
+            <td style="padding: 8px; vertical-align: top;">ウォッチャーズ・キープ5階で入手。</td>
+            <td style="padding: 8px; vertical-align: top;">吹き飛ばし</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%83%AD%E3%83%A0%E3%83%BB%E3%83%95%E3%82%A1%E3%82%A8%E3%83%AB%2B5" target="_blank" rel="noopener noreferrer">クロム・ファエル+5</a></td>
+            <td style="padding: 8px; vertical-align: top;">・Hammer of Thunderbolts +3 寺院地区の下水道 → イリシッドの隠れ家<br>・Crom Faeyr Scroll ウマル・ヒルの廃寺院（Temple Ruins） シャドウ・ドラゴン <br>・Hands of Takkok / Gauntlets of Ogre Power プレイナー・スフィア<br>・Girdle of Frost Giant Strength アンダーダークのクオ・トアのダンジョン デーモン・ナイト5体との戦闘後、そのうちの1体から入手</td>
+            <td style="padding: 8px; vertical-align: top;">STR 25</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%AA%E3%83%B3%2B4" target="_blank" rel="noopener noreferrer">スタッフ・オブ・リン+4</a></td>
+            <td style="padding: 8px; vertical-align: top;">アドベンチャラーマートで購入。序盤から買える最強クラスの武器。<br>18900G</td>
+            <td style="padding: 8px; vertical-align: top;">序盤の攻撃力</td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%83%AA%E3%83%A0%E3%82%BE%E3%83%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%83%84%2B3" target="_blank" rel="noopener noreferrer">クリムゾン・ダーツ+3</a></td>
+            <td style="padding: 8px; vertical-align: top;">ウオッチャーズキープ１階</td>
+            <td style="padding: 8px; vertical-align: top;">遠距離<br>弾不要</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%A9%E3%83%BC%E3%83%89%2B5" target="_blank" rel="noopener noreferrer">スリング・オブ・エヴァラード+5</a></td>
+            <td style="padding: 8px; vertical-align: top;">コッパー・コロネット（Copper Coronet）の追加商人 Joluv が販売（EE版・ボーナス商人有効時）。価格は29,750G。</td>
+            <td style="padding: 8px; vertical-align: top;">遠距離<br>弾不要</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">ローブ</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AD%E3%83%BC%E3%83%96%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%B4%E3%82%A7%E3%82%AF%E3%83%8A" target="_blank" rel="noopener noreferrer">ローブ・オブ・ヴェクナ</a></td>
+            <td style="padding: 8px; vertical-align: top;">アドベンチャラーマート2階奥にいる追加商人のDeidreが販売 23800</td>
+            <td style="padding: 8px; vertical-align: top;">詠唱短縮<br>AC強化<br>マジックレジスタンス強化</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AD%E3%83%BC%E3%83%96%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B0%E3%83%83%E3%83%89%E3%82%A2%E3%83%BC%E3%83%81%E3%83%A1%E3%82%A4%E3%82%B8" target="_blank" rel="noopener noreferrer">ローブ・オブ・グッドアーチメイジ</a></td>
+            <td style="padding: 8px; vertical-align: top;">トレードミート（Trademeet）の鍛冶屋（Smithy）が販売。30,750G</td>
+            <td style="padding: 8px; vertical-align: top;">AC強化<br>セービングスロー強化<br>マジックレジスタンス強化</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">アミュレット</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%83%E3%83%88%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%91%E3%83%AF%E3%83%BC" target="_blank" rel="noopener noreferrer">アミュレット・オブ・パワー</a></td>
+            <td style="padding: 8px; vertical-align: top;">**アラン・リヴェイル（Aran Linvail）**のクエストを進めると報酬として入手。Chapter 3で取得可能。</td>
+            <td style="padding: 8px; vertical-align: top;">詠唱短縮</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B8%E3%83%BB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%AA%E3%83%95%E3%82%A1%E3%82%A4%E3%83%A4%E3%83%BC" target="_blank" rel="noopener noreferrer">ジ・アンプリファイヤー</a></td>
+            <td style="padding: 8px; vertical-align: top;">イレニカスのダンジョン1階 マスター（Master）の部屋</td>
+            <td style="padding: 8px; vertical-align: top;">魔法増量</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">手</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%96%E3%83%AC%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%87%E3%82%A3%E3%83%95%E3%82%A7%E3%83%B3%E3%82%B9AC3" target="_blank" rel="noopener noreferrer">ブレーサー・オブ・ディフェンスAC3</a></td>
+            <td style="padding: 8px; vertical-align: top;">アドベンチャラーズ・マート9,100G</td>
+            <td style="padding: 8px; vertical-align: top;">AC強化</td>
+            <td style="padding: 8px; vertical-align: top;">ブレーサー・オブ・ディフェンスAC4</td>
+            <td style="padding: 8px; vertical-align: top;">アドベンチャラーズ・マート7,000G</td>
+            <td style="padding: 8px; vertical-align: top;">AC強化</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">指輪１</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%AC%E3%83%83%E3%82%AF%E3%82%B9" target="_blank" rel="noopener noreferrer">リング・オブ・ガックス</a></td>
+            <td style="padding: 8px; vertical-align: top;">**カンガックス（Kangaxx）**を倒すと入手。ゲーム最強クラスの指輪。</td>
+            <td style="padding: 8px; vertical-align: top;">AC強化<br>再生<br>セービングスロー強化</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%AA%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank" rel="noopener noreferrer">リング・オブ・リジェネレーション</a></td>
+            <td style="padding: 8px; vertical-align: top;">アドベンチャラーマートのリボルド（Ribald）からスリで入手（倒しても可だが非推奨）。</td>
+            <td style="padding: 8px; vertical-align: top;">再生</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">指輪２</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%A2%E3%82%AD%E3%83%A5%E3%82%A4%E3%83%86%E3%82%A3" target="_blank" rel="noopener noreferrer">リング・オブ・アキュイティ</a></td>
+            <td style="padding: 8px; vertical-align: top;">プレイナー・スフィアのクエス<br>最奥部で老魔術師 ラヴォック（Lavok） に会い、クエストを最後まで進めると、ラヴォックの遺体から Ring of Acuity を入手</td>
+            <td style="padding: 8px; vertical-align: top;">魔法増量</td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">指輪予備</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B9" target="_blank" rel="noopener noreferrer">リング・オブ・ヒューマンインフルエンス</a></td>
+            <td style="padding: 8px; vertical-align: top;">サーカステント</td>
+            <td style="padding: 8px; vertical-align: top;">値下げ</td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+            <td style="padding: 8px; vertical-align: top;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">ブーツ</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%91%E3%82%A6%E3%82%BA%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%81%E3%83%BC%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer">パウズ・オブ・ザ・チーター</a></td>
+            <td style="padding: 8px; vertical-align: top;">プレナー・プリズン</td>
+            <td style="padding: 8px; vertical-align: top;">高速移動</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%91%E3%82%A6%E3%82%BA%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%81%E3%83%BC%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer">パウズ・オブ・ザ・チーター</a></td>
+            <td style="padding: 8px; vertical-align: top;">スペルホールド</td>
+            <td style="padding: 8px; vertical-align: top;">高速移動</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">頭</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%96%E3%83%AD%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%A4%E3%82%AA%E3%82%A6%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3" target="_blank" rel="noopener noreferrer">ブロンズ・イオウンストーン</a></td>
+            <td style="padding: 8px; vertical-align: top;">ToB サラドゥシュ関連</td>
+            <td style="padding: 8px; vertical-align: top;">魔法増量</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%98%E3%83%AB%E3%83%A0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%90%E3%83%AB%E3%83%80%E3%83%A9%E3%83%B3" target="_blank" rel="noopener noreferrer">ヘルム・オブ・バルダラン</a></td>
+            <td style="padding: 8px; vertical-align: top;">イレニカスのダンジョン1階 </td>
+            <td style="padding: 8px; vertical-align: top;">THACO強化<br>AC強化<br>セービングスロー強化<br>HP強化</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%80%E3%82%B9%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%BB%E3%82%A4%E3%82%AA%E3%82%A6%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3" target="_blank" rel="noopener noreferrer">ダスティローズ・イオウンストーン</a></td>
+            <td style="padding: 8px; vertical-align: top;">スペルホールド地下（Spellhold Dungeon）</td>
+            <td style="padding: 8px; vertical-align: top;">AC強化</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%91%E3%83%BC%E3%83%AB%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%BB%E3%82%A4%E3%82%AA%E3%82%A6%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3" target="_blank" rel="noopener noreferrer">パールホワイト・イオウンストーン</a></td>
+            <td style="padding: 8px; vertical-align: top;">ウマー・ヒルズ（Umar Hills） 第1階層（Temple Ruins Dungeon Level 1）<br>溶岩の部屋（Lava Room）</td>
+            <td style="padding: 8px; vertical-align: top;">再生</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">ベルト</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%99%E3%83%AB%E3%83%88%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%A4%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%BB%E3%83%90%E3%83%AA%E3%82%A2%E3%83%BC" target="_blank" rel="noopener noreferrer">ベルト・オブ・イナーシャル・バリアー</a></td>
+            <td style="padding: 8px; vertical-align: top;">トレードミートの商人（バザールの露店）が販売 16,375G</td>
+            <td style="padding: 8px; vertical-align: top;">セービングスロー強化</td>
+            <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%AC%E3%83%BC%E3%83%89%E3%83%AB%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%AB%E3%82%B8%E3%83%A3%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%B9%E3%83%88%E3%83%AC%E3%83%B3%E3%82%B0%E3%82%B9" target="_blank" rel="noopener noreferrer">ガードル・オブ・ヒルジャイアントストレングス</a></td>
+            <td style="padding: 8px; vertical-align: top;">アドベンチャラーズ・マート（Adventure Mart）14,000G</td>
+            <td style="padding: 8px; vertical-align: top;">荷物増量<br>フレイルオブエイジス装着</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br /><br />
+<a id="chapter1"></a>
+<h2>一章</h2>
+  <h3>イレニカスのダンジョン</h3>
+    <p>今回はエアリーと二人旅をしようと思う。<br />
+      ソーサラーなので、序盤から経験値を稼ぎたい。イレニカスのダンジョンは、ソロで行ってみた。<br />
+      魔法切れで休憩する時に、最初は休憩中にモンスターに襲われないか心配だったが、イレニカスのダンジョンではほとんど襲われない仕様らしくソーサラーにとってはありがたかった。<br />
+      頻繁に休憩する必要があったが、何とかソロで攻略できた。戦闘はソロでも困らないようだ（魔法切れ以外は）。持てる量が少ないので、持ち出せるアイテムが限られるのは悲しい。😖
+    </p>
+    再生速度
+    <select onchange="chapter1_1.playbackRate=this.value">
+        <option value="1">1倍</option>
+        <option value="2">2倍</option>
+        <option value="5">5倍</option>
+        <option value="10" selected>10倍</option>
+        <option value="15">15倍</option>
+    </select>
+    <video id="chapter1_1"
+        src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-1-Irenicus's Dungeon.mp4"
+        controls 
+        preload="metadata" 
+        style="max-width: 100%; cursor: pointer;"
+        onclick="this.setAttribute('controls', true); this.play();">
+    </video>
+    <script>
+        document.getElementById('chapter1_1').playbackRate = 10;
+    </script>
+
+
+  <h3>サーカス テント</h3>
+    <p>エアリーを仲間にするのとリング・オブ・ヒューマンインフルエンスを入手するために、まず、サーカステントに向かった。<br />
+      ここでは、<a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B9" target="_blank" >リング・オブ・ヒューマンインフルエンス</a>と
+      <a href="https://wikiwiki.jp/gorion/%E3%82%A8%E3%83%AB%E3%83%95%E3%82%BA%E3%83%99%E3%82%A4%E3%83%B3" target="_blank" >ガードル・オブ・ピアーシング：エルフズベイン</a>を入手した。<br />
+      リング・オブ・ヒューマンインフルエンスでCHAを盛れたので、イレニカスのダンジョンに入手したアイテムはアドベンチャー・マートで売った。<br />
+      ワンド類は、店に売るとフルチャージされるので、余裕ができたら買い戻せるようにライバルドに売った。<br />
+      直近は、『Robe of Vecna』と『Sling of Everard』を購入したいが、どちらも20000G越えですぐには買えない。（今の所持金は6000G程度）<br />
+      ウオッチャーズキープに行く前に、ヨシモを一旦仲間にして、ライバルドからリング・オブ・リジェネレーションを掏って手に入れた。😋<br />
+    </p>
+    <select onchange="chapter1_2.playbackRate=this.value">
+        <option value="1">1倍</option>
+        <option value="2">2倍</option>
+        <option value="5">5倍</option>
+        <option value="10" selected>10倍</option>
+        <option value="15">15倍</option>
+    </select>
+    <video id="chapter1_2"
+        src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-2-CircusTent.mp4" 
+        controls 
+        preload="metadata" 
+        style="max-width: 100%; cursor: pointer;"
+        onclick="this.setAttribute('controls', true); this.play();">
+    </video>
+    <script>
+        document.getElementById('chapter1_2').playbackRate = 10;
+    </script>
+
+<a id="chapter2"></a>
+<h2>二章</h2>
+  <h3>ウォッチャーズキープ１階</h3>
+  <p><a href="https://wikiwiki.jp/gorion/%E3%83%AD%E3%83%BC%E3%83%96%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%B4%E3%82%A7%E3%82%AF%E3%83%8A" target="_blank" >ローブ・オブ・ヴェクナ</a>
+    の購入資金を調達するため、ウォッチャーズキープ１階を攻略し、何とか２階へのポータルを通過するところまで進めた。<br />
+    ここでは、<a href="https://wikiwiki.jp/gorion/%E3%82%B4%E3%83%BC%E3%83%AC%E3%83%A0%E3%83%BB%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" target="_blank" >ゴーレム・マニュアル</a>、
+    <a href="https://wikiwiki.jp/gorion/%E5%BC%BE%E8%96%AC%E3%83%99%E3%83%AB%E3%83%88" target="_blank" >弾薬ベルト</a>、
+    <a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%83%AA%E3%83%A0%E3%82%BE%E3%83%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%83%84%2B3" target="_blank" >クリムゾン・ダーツ+3</a>を入手した。<br />
+    結局、29000G程度溜まったけど、ローブ・オブ・ヴェクナ(24000G?)を購入すると、他の装備は買えそうにない。😂😂😂<br />
+    今回は魔法使いパーティなので、TACHOはゴミだ😅。魔法・守り・逃げ強化のための装備を優先して取得したい。✨<br />
+  </p>
+  <select onchange="chapter2_1.playbackRate=this.value">
+      <option value="1">1倍</option>
+      <option value="2">2倍</option>
+      <option value="5">5倍</option>
+      <option value="10" selected>10倍</option>
+      <option value="15">15倍</option>
+  </select>
+  <video id="chapter2_1"
+      src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter2-1-WatchersKeep_1stFloor.mp4" 
+      controls 
+      preload="metadata" 
+      style="max-width: 100%; cursor: pointer;"
+      onclick="this.setAttribute('controls', true); this.play();">
+  </video>
+  <script>
+      document.getElementById('chapter2_1').playbackRate = 10;
+  </script>
+
+  <div class="table-container">
+      <h1>ウォッチャーズキープ１階クリア時の装備</h1>
+    <table>
+      <thead>
+          <tr>
+          <th class="header-main"></th>
+          <th class="header-main">主人公(ソーサラーLevel11 AC3 HP61）</th>
+          <th class="header-main">エアリー（クレリックLevel8/メイジLevel9<br />AC3(片手武器使用時) HP45)</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+          <td class="category-cell" style="color:#475569;">武器１</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%83%BB%E3%82%B9%E3%83%94%E3%82%A2%2B2#:hl:word=%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95" target="_blank">スタッフ・スピア＋２　TACHO:14</a></td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%2B1#:hl:word=%E3%82%AF%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95" target="_blank">クォータースタッフ＋１ TACHO:14</a></td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">武器２</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%83%AA%E3%83%A0%E3%82%BE%E3%83%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%83%84%2B3" target="_blank">クリムゾン・ダーツ＋３ TACHO:16</a></td>
+          <td>スリング TACHO:13</td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">アーマー</td>
+          <td>なし</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E6%97%85%E4%BA%BA%E3%81%AE%E3%83%AD%E3%83%BC%E3%83%96" target="_blank">旅人のローブ</a></td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">ガントレット</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%83%96%E3%83%AC%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%87%E3%82%A3%E3%83%95%E3%82%A7%E3%83%B3%E3%82%B9%EF%BC%9AAC8#:hl:word=%E3%83%96%E3%83%AC%E3%83%BC%E3%82%B5%E3%83%BC" target="_blank" rel="noopener noreferrer">ブレーサー・オブ・ディフェンス：AC8</a></td>
+          <td>なし</td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">ヘルメット</td>
+          <td>なし</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%83%98%E3%83%AB%E3%83%A0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%90%E3%83%AB%E3%83%80%E3%83%A9%E3%83%B3" target="_blank" rel="noopener noreferrer">ヘルム・オブ・バルダラン</a></td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">アミュレット</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%82%B8%E3%83%BB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%AA%E3%83%95%E3%82%A1%E3%82%A4%E3%83%A4%E3%83%BC" target="_blank" rel="noopener noreferrer">アミュレット・オブ・メタスペル・インフルエンス：ジ・アンプリファイヤー</a></td>
+          <td>なし</td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">盾</td>
+          <td>なし</td>
+          <td>スモールシールド＋２</td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">指輪１</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%2B1" target="_blank" rel="noopener noreferrer">リング・オブ・ザ・プリンス＋１</a></td>
+          <td>なし</td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">指輪２</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B9" target="_blank">リング・オブ・ヒューマンインフルエンス</a></td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%AA%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank">リング・オブ・リジェネレーション</a></td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">クローク</td>
+          <td>なし</td>
+          <td>なし</td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">ブーツ</td>
+          <td>なし</td>
+          <td>なし</td>
+          </tr>
+          <tr>
+          <td class="category-cell" style="color:#475569;">ベルト</td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%83%87%E3%82%B9%E3%83%88%E3%83%AD%E3%82%A4%E3%83%A4%E3%83%BC%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%92%E3%83%AB#:hl:word=%E3%83%87%E3%82%B9%E3%83%88%E3%83%AD%E3%82%A4%E3%83%A4%E3%83%BC" target="_blank">デストロイヤー・オブ・ザ・ヒル</a></td>
+          <td><a href="https://wikiwiki.jp/gorion/%E3%82%A8%E3%83%AB%E3%83%95%E3%82%BA%E3%83%99%E3%82%A4%E3%83%B3#:hl:word=%E3%82%A8%E3%83%AB%E3%83%95%E3%82%BA" target="_blank">エルフズベイン</a></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+
                 </div>
-
-
-                    <a id="weponPlan" name="weponPlan"></a>	
-                    <h3>装備　計画</h3>
-                        <p>
-                        最終的には、下表のような装備を揃えたい。大部分が２章で入手可能なようなので、装備の収集を優先に進めようと思う。<br />
-                        </p>
-                        <div class="table-container">
-
-<table border="1" style="border-collapse: collapse; width: 100%; font-family: sans-serif; text-align: left;">
-  <thead>
-    <tr>
-      <th rowspan="2" style="background-color: #f2f2f2; padding: 8px; text-align: center;">部位</th>
-      <th colspan="3" style="background-color: #f2f2f2; padding: 8px; text-align: center;">主人公</th>
-      <th colspan="3" style="background-color: #f2f2f2; padding: 8px; text-align: center;">エアリー</th>
-    </tr>
-    <tr>
-      <th style="background-color: #f2f2f2; padding: 8px;">名称</th>
-      <th style="background-color: #f2f2f2; padding: 8px;">入手場所</th>
-      <th style="background-color: #f2f2f2; padding: 8px;">主な効果</th>
-      <th style="background-color: #f2f2f2; padding: 8px;">名称</th>
-      <th style="background-color: #f2f2f2; padding: 8px;">入手場所</th>
-      <th style="background-color: #f2f2f2; padding: 8px;">主な効果</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="4" style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">武器</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%9E%E3%82%AE" target="_blank" rel="noopener noreferrer">スタッフ・オブ・マギ</a></td>
-      <td style="padding: 8px; vertical-align: top;">ボダイ（Bodhi）の墓地ギルドで吸血鬼のボスから入手（Chapter 6終盤）</td>
-      <td style="padding: 8px; vertical-align: top;">透明化</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="フレイル・オブ・エイジス+3" target="_blank" rel="noopener noreferrer">フレイル・オブ・エイジス+5</a></td>
-      <td style="padding: 8px; vertical-align: top;">デ・アルニス城（ナリアのクエスト）</td>
-      <td style="padding: 8px; vertical-align: top;">属性攻撃</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%A9%E3%83%A0%2B6" target="_blank" rel="noopener noreferrer">スタッフ・オブ・ラム+6</a></td>
-      <td style="padding: 8px; vertical-align: top;">ウォッチャーズ・キープ5階で入手。</td>
-      <td style="padding: 8px; vertical-align: top;">吹き飛ばし</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%83%AD%E3%83%A0%E3%83%BB%E3%83%95%E3%82%A1%E3%82%A8%E3%83%AB%2B5" target="_blank" rel="noopener noreferrer">クロム・ファエル+5</a></td>
-      <td style="padding: 8px; vertical-align: top;">・Hammer of Thunderbolts +3 寺院地区の下水道 → イリシッドの隠れ家<br>・Crom Faeyr Scroll ウマル・ヒルの廃寺院（Temple Ruins） シャドウ・ドラゴン <br>・Hands of Takkok / Gauntlets of Ogre Power プレイナー・スフィア<br>・Girdle of Frost Giant Strength アンダーダークのクオ・トアのダンジョン デーモン・ナイト5体との戦闘後、そのうちの1体から入手</td>
-      <td style="padding: 8px; vertical-align: top;">STR 25</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%AA%E3%83%B3%2B4" target="_blank" rel="noopener noreferrer">スタッフ・オブ・リン+4</a></td>
-      <td style="padding: 8px; vertical-align: top;">アドベンチャラーマートで購入。序盤から買える最強クラスの武器。<br>18900G</td>
-      <td style="padding: 8px; vertical-align: top;">序盤の攻撃力</td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%83%AA%E3%83%A0%E3%82%BE%E3%83%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%83%84%2B3" target="_blank" rel="noopener noreferrer">クリムゾン・ダーツ+3</a></td>
-      <td style="padding: 8px; vertical-align: top;">ウオッチャーズキープ１階</td>
-      <td style="padding: 8px; vertical-align: top;">遠距離<br>弾不要</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%A9%E3%83%BC%E3%83%89%2B5" target="_blank" rel="noopener noreferrer">スリング・オブ・エヴァラード+5</a></td>
-      <td style="padding: 8px; vertical-align: top;">コッパー・コロネット（Copper Coronet）の追加商人 Joluv が販売（EE版・ボーナス商人有効時）。価格は29,750G。</td>
-      <td style="padding: 8px; vertical-align: top;">遠距離<br>弾不要</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">ローブ</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AD%E3%83%BC%E3%83%96%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%B4%E3%82%A7%E3%82%AF%E3%83%8A" target="_blank" rel="noopener noreferrer">ローブ・オブ・ヴェクナ</a></td>
-      <td style="padding: 8px; vertical-align: top;">アドベンチャラーマート2階奥にいる追加商人のDeidreが販売 23800</td>
-      <td style="padding: 8px; vertical-align: top;">詠唱短縮<br>AC強化<br>マジックレジスタンス強化</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AD%E3%83%BC%E3%83%96%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B0%E3%83%83%E3%83%89%E3%82%A2%E3%83%BC%E3%83%81%E3%83%A1%E3%82%A4%E3%82%B8" target="_blank" rel="noopener noreferrer">ローブ・オブ・グッドアーチメイジ</a></td>
-      <td style="padding: 8px; vertical-align: top;">トレードミート（Trademeet）の鍛冶屋（Smithy）が販売。30,750G</td>
-      <td style="padding: 8px; vertical-align: top;">AC強化<br>セービングスロー強化<br>マジックレジスタンス強化</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">アミュレット</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%83%E3%83%88%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%91%E3%83%AF%E3%83%BC" target="_blank" rel="noopener noreferrer">アミュレット・オブ・パワー</a></td>
-      <td style="padding: 8px; vertical-align: top;">**アラン・リヴェイル（Aran Linvail）**のクエストを進めると報酬として入手。Chapter 3で取得可能。</td>
-      <td style="padding: 8px; vertical-align: top;">詠唱短縮</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%B8%E3%83%BB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%AA%E3%83%95%E3%82%A1%E3%82%A4%E3%83%A4%E3%83%BC" target="_blank" rel="noopener noreferrer">ジ・アンプリファイヤー</a></td>
-      <td style="padding: 8px; vertical-align: top;">イレニカスのダンジョン1階 マスター（Master）の部屋</td>
-      <td style="padding: 8px; vertical-align: top;">魔法増量</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">手</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%96%E3%83%AC%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%87%E3%82%A3%E3%83%95%E3%82%A7%E3%83%B3%E3%82%B9AC3" target="_blank" rel="noopener noreferrer">ブレーサー・オブ・ディフェンスAC3</a></td>
-      <td style="padding: 8px; vertical-align: top;">アドベンチャラーズ・マート9,100G</td>
-      <td style="padding: 8px; vertical-align: top;">AC強化</td>
-      <td style="padding: 8px; vertical-align: top;">ブレーサー・オブ・ディフェンスAC4</td>
-      <td style="padding: 8px; vertical-align: top;">アドベンチャラーズ・マート7,000G</td>
-      <td style="padding: 8px; vertical-align: top;">AC強化</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">指輪１</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%AC%E3%83%83%E3%82%AF%E3%82%B9" target="_blank" rel="noopener noreferrer">リング・オブ・ガックス</a></td>
-      <td style="padding: 8px; vertical-align: top;">**カンガックス（Kangaxx）**を倒すと入手。ゲーム最強クラスの指輪。</td>
-      <td style="padding: 8px; vertical-align: top;">AC強化<br>再生<br>セービングスロー強化</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%AA%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank" rel="noopener noreferrer">リング・オブ・リジェネレーション</a></td>
-      <td style="padding: 8px; vertical-align: top;">アドベンチャラーマートのリボルド（Ribald）からスリで入手（倒しても可だが非推奨）。</td>
-      <td style="padding: 8px; vertical-align: top;">再生</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">指輪２</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%A2%E3%82%AD%E3%83%A5%E3%82%A4%E3%83%86%E3%82%A3" target="_blank" rel="noopener noreferrer">リング・オブ・アキュイティ</a></td>
-      <td style="padding: 8px; vertical-align: top;">プレイナー・スフィアのクエス<br>最奥部で老魔術師 ラヴォック（Lavok） に会い、クエストを最後まで進めると、ラヴォックの遺体から Ring of Acuity を入手</td>
-      <td style="padding: 8px; vertical-align: top;">魔法増量</td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">指輪予備</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B9" target="_blank" rel="noopener noreferrer">リング・オブ・ヒューマンインフルエンス</a></td>
-      <td style="padding: 8px; vertical-align: top;">サーカステント</td>
-      <td style="padding: 8px; vertical-align: top;">値下げ</td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-      <td style="padding: 8px; vertical-align: top;"></td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">ブーツ</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%91%E3%82%A6%E3%82%BA%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%81%E3%83%BC%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer">パウズ・オブ・ザ・チーター</a></td>
-      <td style="padding: 8px; vertical-align: top;">プレナー・プリズン</td>
-      <td style="padding: 8px; vertical-align: top;">高速移動</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%91%E3%82%A6%E3%82%BA%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%81%E3%83%BC%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer">パウズ・オブ・ザ・チーター</a></td>
-      <td style="padding: 8px; vertical-align: top;">スペルホールド</td>
-      <td style="padding: 8px; vertical-align: top;">高速移動</td>
-    </tr>
-    <tr>
-      <td rowspan="2" style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">頭</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%96%E3%83%AD%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%A4%E3%82%AA%E3%82%A6%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3" target="_blank" rel="noopener noreferrer">ブロンズ・イオウンストーン</a></td>
-      <td style="padding: 8px; vertical-align: top;">ToB サラドゥシュ関連</td>
-      <td style="padding: 8px; vertical-align: top;">魔法増量</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%98%E3%83%AB%E3%83%A0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%90%E3%83%AB%E3%83%80%E3%83%A9%E3%83%B3" target="_blank" rel="noopener noreferrer">ヘルム・オブ・バルダラン</a></td>
-      <td style="padding: 8px; vertical-align: top;">イレニカスのダンジョン1階 </td>
-      <td style="padding: 8px; vertical-align: top;">THACO強化<br>AC強化<br>セービングスロー強化<br>HP強化</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%80%E3%82%B9%E3%83%86%E3%82%A3%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%BB%E3%82%A4%E3%82%AA%E3%82%A6%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3" target="_blank" rel="noopener noreferrer">ダスティローズ・イオウンストーン</a></td>
-      <td style="padding: 8px; vertical-align: top;">スペルホールド地下（Spellhold Dungeon）</td>
-      <td style="padding: 8px; vertical-align: top;">AC強化</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%91%E3%83%BC%E3%83%AB%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%BB%E3%82%A4%E3%82%AA%E3%82%A6%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3" target="_blank" rel="noopener noreferrer">パールホワイト・イオウンストーン</a></td>
-      <td style="padding: 8px; vertical-align: top;">ウマー・ヒルズ（Umar Hills） 第1階層（Temple Ruins Dungeon Level 1）<br>溶岩の部屋（Lava Room）</td>
-      <td style="padding: 8px; vertical-align: top;">再生</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; vertical-align: top; font-weight: bold; background-color: #fafafa;">ベルト</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%83%99%E3%83%AB%E3%83%88%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%82%A4%E3%83%8A%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%BB%E3%83%90%E3%83%AA%E3%82%A2%E3%83%BC" target="_blank" rel="noopener noreferrer">ベルト・オブ・イナーシャル・バリアー</a></td>
-      <td style="padding: 8px; vertical-align: top;">トレードミートの商人（バザールの露店）が販売 16,375G</td>
-      <td style="padding: 8px; vertical-align: top;">セービングスロー強化</td>
-      <td style="padding: 8px; vertical-align: top;"><a href="https://wikiwiki.jp/gorion/%E3%82%AC%E3%83%BC%E3%83%89%E3%83%AB%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%AB%E3%82%B8%E3%83%A3%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%B9%E3%83%88%E3%83%AC%E3%83%B3%E3%82%B0%E3%82%B9" target="_blank" rel="noopener noreferrer">ガードル・オブ・ヒルジャイアントストレングス</a></td>
-      <td style="padding: 8px; vertical-align: top;">アドベンチャラーズ・マート（Adventure Mart）14,000G</td>
-      <td style="padding: 8px; vertical-align: top;">荷物増量<br>フレイルオブエイジス装着</td>
-    </tr>
-  </tbody>
-</table>
-                </div>
-<br /><br />
-                    <a id="chapter1"></a>
-                    <h2>一章</h2>
-                    <h3>イレニカスのダンジョン</h3>
-	          					<p>今回はエアリーと二人旅をしようと思う。<br />
-                        ソーサラーなので、序盤から経験値を稼ぎたい。イレニカスのダンジョンは、ソロで行ってみた。<br />
-                        魔法切れで休憩する時に、最初は休憩中にモンスターに襲われないか心配だったが、イレニカスのダンジョンではほとんど襲われない仕様らしくソーサラーにとってはありがたかった。<br />
-                        頻繁に休憩する必要があったが、何とかソロで攻略できた。戦闘はソロでも困らないようだ（魔法切れ以外は）。持てる量が少ないので、持ち出せるアイテムが限られるのは悲しい。😖</p>
-                        再生速度
-                        <select onchange="chapter1_1.playbackRate=this.value">
-                            <option value="1">1倍</option>
-                            <option value="2">2倍</option>
-                            <option value="5">5倍</option>
-                            <option value="10" selected>10倍</option>
-                            <option value="15">15倍</option>
-                        </select>
-                        <video id="chapter1_1"
-                            src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-1-Irenicus's Dungeon.mp4"
-                            controls 
-                            preload="metadata" 
-                            style="max-width: 100%; cursor: pointer;"
-                            onclick="this.setAttribute('controls', true); this.play();"
-                        ></video>
-                      <script>
-                          document.getElementById('chapter1_1').playbackRate = 10;
-                      </script>
-                </div>
-
-                    <h3>サーカス テント</h3>
-              						<p>エアリーを仲間にするのと<a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B9" target="_blank" >リング・オブ・ヒューマンインフルエンス</a>
-                            を入手するために、まず、サーカステントに向かった。<br />
-                            ここでは、<a href="https://wikiwiki.jp/gorion/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B9" target="_blank" >リング・オブ・ヒューマンインフルエンス</a>と
-                            <a href="https://wikiwiki.jp/gorion/%E3%82%A8%E3%83%AB%E3%83%95%E3%82%BA%E3%83%99%E3%82%A4%E3%83%B3" target="_blank" >ガードル・オブ・ピアーシング：エルフズベイン</a>を入手した。<br />
-                            リング・オブ・ヒューマンインフルエンスでCHAを盛れたので、イレニカスのダンジョンに入手したアイテムはアドベンチャー・マートで売った。<br />
-                            ワンド類は、店に売るとフルチャージされるので、余裕ができたら買い戻せるようにライバルドに売った。<br />
-                            直近は、『Robe of Vecna』と『Sling of Everard』を購入したいが、どちらも20000G越えですぐには買えない。（今の所持金は6000G程度）<br />
-						            </p>
-                        <select onchange="chapter2_1.playbackRate=this.value">
-                            <option value="1">1倍</option>
-                            <option value="2">2倍</option>
-                            <option value="5">5倍</option>
-                            <option value="10" selected>10倍</option>
-                            <option value="15">15倍</option>
-                        </select>
-                        <video id="chapter2_1"
-                            src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter1-2-CircusTent.mp4" 
-                            controls 
-                            preload="metadata" 
-                            style="max-width: 100%; cursor: pointer;"
-                            onclick="this.setAttribute('controls', true); this.play();"
-                        ></video>
-                      <script>
-                          document.getElementById('chapter2_1').playbackRate = 10;
-                      </script>
-
-                    <a id="chapter2"></a>
-                    <h2>二章</h2>
-                    <h3>ウォッチャーズキープ１階</h3>
-						<p><a href="https://wikiwiki.jp/gorion/%E3%83%AD%E3%83%BC%E3%83%96%E3%83%BB%E3%82%AA%E3%83%96%E3%83%BB%E3%83%B4%E3%82%A7%E3%82%AF%E3%83%8A" target="_blank" >ローブ・オブ・ヴェクナ</a>
-                            の購入資金を調達するため、ウォッチャーズキープ１階を攻略し、何とか２階へのポータルを通過するところまで進めた。<br />
-                            ここでは、<a href="https://wikiwiki.jp/gorion/%E3%82%B4%E3%83%BC%E3%83%AC%E3%83%A0%E3%83%BB%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" target="_blank" >ゴーレム・マニュアル</a>、
-                            <a href="https://wikiwiki.jp/gorion/%E5%BC%BE%E8%96%AC%E3%83%99%E3%83%AB%E3%83%88" target="_blank" >弾薬ベルト</a>、
-                            <a href="https://wikiwiki.jp/gorion/%E3%82%AF%E3%83%AA%E3%83%A0%E3%82%BE%E3%83%B3%E3%83%BB%E3%83%80%E3%83%BC%E3%83%84%2B3" target="_blank" >クリムゾン・ダーツ+3</a>を入手した。<br />
-                            結局、29000G程度溜まったけど、ローブ・オブ・ヴェクナ(24000G?)を購入すると、他の装備は買えそうにない。😂😂😂<br />
-						            </p>
-                        <select onchange="chapter1_2.playbackRate=this.value">
-                            <option value="1">1倍</option>
-                            <option value="2">2倍</option>
-                            <option value="5">5倍</option>
-                            <option value="10" selected>10倍</option>
-                            <option value="15">15倍</option>
-                        </select>
-                        <video id="chapter1_2"
-                            src="https://pub-2b4ffb692f5142c9a157f22e69ec3389.r2.dev/Chapter2-1-WatchersKeep_1stFloor.mp4" 
-                            controls 
-                            preload="metadata" 
-                            style="max-width: 100%; cursor: pointer;"
-                            onclick="this.setAttribute('controls', true); this.play();"
-                        ></video>
-                      <script>
-                          document.getElementById('chapter1_2').playbackRate = 10;
-                      </script>
                 <!-- 本文 -->
             </div>
 
